@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="40734078-8622-4622-a109-8a3c634525e0"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&amp;family=Newsreader:opsz,wght@6..72,400&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script src="48fde002-ecf7-4c04-9629-09dadd2cdf4d"></script>
+<script src="a81a250a-bd11-4757-a196-1f4154db5266"></script>
+</helmet>
+<div ref="{{ rootRef }}" onScroll="{{ onScroll }}" onWheel="{{ onWheel }}" style="position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;background:#171513;color:#f5f0e8;font-family:'DM Mono',ui-monospace,monospace;">
+  <sc-if value="{{ showLoadError }}"><div role="status" style="position:fixed;bottom:20px;left:20px;right:20px;z-index:1000;padding:16px;background:#f6de7e;color:#1d1a16;display:flex;justify-content:space-between;gap:16px;font-size:12px;"><span>{{ loadError }}</span><button onClick="{{ clearLoadError }}" style="border:0;background:none;color:inherit;cursor:pointer;">Dismiss</button></div></sc-if>
+  <div style="position:sticky;top:0;z-index:50;height:56px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 clamp(14px,3vw,32px);background:#171513;border-bottom:1px solid rgba(245,240,232,0.12);">
+    <button onClick="{{ backToRoom }}" style="justify-self:start;display:flex;align-items:center;gap:10px;background:none;border:0;padding:8px 0;cursor:pointer;color:rgba(245,240,232,0.7);font-family:'DM Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;" style-hover="color:#fff;">
+      <span style="display:block;width:16px;height:1px;background:currentColor;"></span><span>Room</span>
+    </button>
+    <button onClick="{{ goHome }}" style="background:none;border:0;cursor:pointer;color:#f5f0e8;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:21px;letter-spacing:0.03em;text-transform:uppercase;padding:6px 10px;">{{ headerLabel }}</button>
+    <span style="justify-self:end;font-size:11px;color:rgba(245,240,232,0.6);">Calfus</span>
+  </div>
+
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <div style="visibility:{{ homeVis }};display:flex;flex-direction:column;align-items:center;padding-top:clamp(40px,8vh,96px);">
+      <div data-hero style="display:flex;flex-direction:column;align-items:center;gap:20px;padding:0 20px;text-align:center;">
+        <h1 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(60px,11vw,172px);line-height:0.86;text-transform:uppercase;color:#fbf6ee;">October Calibration</h1>
+        <p style="margin:0;max-width:560px;font-family:'Newsreader',serif;font-size:clamp(16px,1.5vw,20px);line-height:1.4;color:#77716a;text-wrap:balance;">Aditya Verma · Design calibration at Calfus</p>
+      </div>
+      <div style="width:min(1400px,90%);margin-top:clamp(56px,10vh,110px);">
+        <sc-for list="{{ bands }}" as="b" hint-placeholder-count="4">
+          <div data-band="{{ $index }}" style="position:relative;will-change:transform;z-index:{{ b.z }};margin-top:{{ b.mt }};">
+            <div onMouseEnter="{{ b.enter }}" onMouseLeave="{{ leaveBand }}" style="transform:{{ b.hoverT }};transform-origin:50% 0%;filter:{{ b.dimF }};transition:transform 420ms cubic-bezier(.22,1,.36,1), filter 300ms ease;">
+              <div style="height:44px;position:relative;">
+                <a data-tab="{{ $index }}" onClick="{{ b.open }}" style="position:absolute;bottom:0;left:{{ b.tabLeft }};width:clamp(190px,19vw,270px);height:44px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform 220ms cubic-bezier(.2,.8,.2,1);" style-hover="transform:translateY(-5px);">
+                  <svg viewBox="0 0 260 44" preserveAspectRatio="none" style="position:absolute;left:0;top:0;width:100%;height:calc(100% + 6px);"><path d="M0,50 L0,44 C24,44 20,0 46,0 L214,0 C240,0 236,44 260,44 L260,50 Z" fill="{{ b.color }}"></path></svg>
+                  <span style="position:relative;font-family:'Newsreader',serif;font-size:clamp(19px,1.7vw,24px);color:{{ b.ink }};white-space:nowrap;">{{ b.name }}</span>
+                </a>
+              </div>
+              <div data-body="{{ $index }}" onClick="{{ b.open }}" style="position:relative;border-radius:4px;background-color:{{ b.color }};box-shadow:0 -1px 0 rgba(0,0,0,0.3), 0 -8px 16px -10px rgba(0,0,0,0.55);color:{{ b.ink }};height:{{ b.h }};cursor:pointer;display:flex;flex-direction:column;">
+                <div style="display:flex;justify-content:flex-end;align-items:center;gap:10px;height:58px;padding:0 clamp(16px,3vw,36px);font-size:13px;">
+                  <span>{{ b.label }}</span>
+                  <span style="display:inline-block;font-size:16px;transform:{{ b.chevT }};transition:transform 200ms ease;">‹</span>
+                </div>
+                <sc-if value="{{ b.last }}" hint-placeholder-val="{{ false }}">
+                  <p data-desc style="margin:0;padding:6px clamp(18px,5vw,64px);max-width:640px;font-size:14px;line-height:1.65;">Six files from this month. Pull a tab to open one.</p>
+                </sc-if>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isCase }}" hint-placeholder-val="{{ false }}">
+    <div style="position:relative;padding-top:28px;">
+      <h1 data-title style="visibility:{{ titleVis }};margin:0 0 30px;padding:0 clamp(16px,3vw,32px);font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(60px,10vw,150px);line-height:0.86;text-transform:uppercase;display:flex;flex-wrap:wrap;color:#fbf6ee;">
+        <sc-for list="{{ letters }}" as="l" hint-placeholder-count="6"><span data-l="" style="display:inline-block;white-space:pre;will-change:transform,opacity;">{{ l }}</span></sc-for>
+      </h1>
+      <div style="position:relative;width:78%;visibility:{{ caseVis }};">
+        <div data-vtabs="" style="position:absolute;top:36px;left:100%;display:flex;flex-direction:column;gap:6px;z-index:1;">
+          <sc-for list="{{ vtabs }}" as="v" hint-placeholder-count="4">
+            <a data-vt="{{ $index }}" onClick="{{ v.go }}" style="position:relative;display:block;width:44px;height:150px;margin-left:{{ v.ml }};cursor:pointer;transition:margin-left 220ms cubic-bezier(.2,.8,.2,1);" style-hover="margin-left:3px;">
+              <svg viewBox="0 0 44 260" preserveAspectRatio="none" style="position:absolute;left:-6px;top:0;width:calc(100% + 6px);height:100%;"><path d="M0,0 L6,0 C6,24 50,20 50,46 L50,214 C50,240 6,236 6,260 L0,260 Z" fill="{{ v.color }}"></path></svg>
+              <span data-vtl="" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;font-family:'Newsreader',serif;font-size:19px;color:{{ v.ink }};white-space:nowrap;">{{ v.name }}</span>
+            </a>
+          </sc-for>
+        </div>
+        <div data-folder="" style="border-radius:4px;position:relative;z-index:2;background:{{ cur.color }};padding:clamp(18px,2.4vw,34px) 3% 90px 4%;perspective:1200px;">
+          <div data-paper="" style="border-radius:4px;position:relative;background:#f4f1ea;color:#1d1a16;min-height:115vh;padding:clamp(28px,4vw,56px) clamp(22px,4vw,56px) 80px clamp(58px,7vw,100px);box-shadow:0 2px 10px rgba(0,0,0,0.2);box-sizing:border-box;display:flex;flex-direction:column;gap:64px;">
+            <div style="position:absolute;left:clamp(18px,2.4vw,32px);top:10%;width:16px;height:16px;border-radius:50%;background:{{ cur.color }};"></div>
+            <div style="position:absolute;left:clamp(18px,2.4vw,32px);top:36%;width:16px;height:16px;border-radius:50%;background:{{ cur.color }};"></div>
+            <div style="position:absolute;left:clamp(18px,2.4vw,32px);top:62%;width:16px;height:16px;border-radius:50%;background:{{ cur.color }};"></div>
+            <div style="position:absolute;left:clamp(44px,5.6vw,74px);top:0;bottom:0;width:1px;background:rgba(29,26,22,0.14);"></div>
+            <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,64px);align-items:flex-start;">
+              <div style="flex:1 1 200px;max-width:280px;display:flex;flex-direction:column;gap:26px;">
+                <div data-lb="image" data-title="{{ cur.name }}: cover image" data-source="{{ cur.coverSrc }}" style="position:relative;cursor:pointer;aspect-ratio:4/5;background:#d8d1c4;transform:rotate(-1.6deg);box-shadow:0 3px 10px rgba(0,0,0,0.16);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(29,26,22,0.45);">
+                  <sc-if value="{{ cur.hasCover }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="{{ cur.name }} logo" style="position:absolute;inset:0;background-color:{{ cur.coverBg }};background-image:{{ cur.coverUrl }};background-size:{{ cur.coverSize }};background-repeat:no-repeat;background-position:center;"></div></sc-if>
+                  <sc-if value="{{ cur.noCover }}" hint-placeholder-val="{{ true }}"><span>Cover image</span></sc-if>
+                  <div style="position:absolute;top:-20px;right:30px;width:13px;height:48px;border:2px solid #8e928f;border-radius:8px;"></div>
+                </div>
+                <div style="font-size:12px;line-height:1.7;display:flex;flex-direction:column;gap:14px;">
+                  <div><strong>File:</strong><br>{{ cur.no }} of 06</div>
+                  <div><strong>Scope:</strong><br>{{ cur.scope }}</div>
+                </div>
+              </div>
+              <div style="flex:2 1 320px;display:flex;flex-direction:column;gap:22px;">
+                <p style="margin:0;font-family:'Newsreader',serif;font-size:clamp(18px,1.5vw,21px);line-height:1.6;text-wrap:pretty;"><span style="float:left;font-size:96px;line-height:0.78;padding:8px 12px 0 0;">{{ cur.initial }}</span>{{ cur.rest }}</p>
+                <sc-if value="{{ cur.hasVideo }}" hint-placeholder-val="{{ false }}">
+                  <div data-lb="video" data-video="{{ cur.video }}" data-title="{{ cur.videoLabel }}" data-source="Made in Claude" style="position:relative;cursor:pointer;align-self:flex-end;width:min(100%,460px);transform:rotate(1.4deg);display:flex;flex-direction:column;margin-top:10px;">
+                    <div data-lb-keep="" style="position:relative;aspect-ratio:16/9;border:7px solid #111;background:#111;box-shadow:0 6px 18px rgba(0,0,0,0.25);overflow:hidden;">
+                      <img src="{{ cur.videoThumb }}" alt="{{ cur.videoLabel }}" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;">
+                    </div>
+                    <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:{{ cur.color }};color:{{ cur.ink }};margin:0 -10px 0 22px;box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+                      <span style="flex:none;width:34px;height:34px;border-radius:50%;border:2px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:11px;padding-left:2px;box-sizing:border-box;">▶</span>
+                      <span style="font-family:'Newsreader',serif;font-size:16px;line-height:1.25;">{{ cur.videoLabel }}</span>
+                    </div>
+                  </div>
+                </sc-if>
+              </div>
+            </div>
+<div style="display:flex;flex-direction:column;gap:clamp(40px,6vw,84px);">
+              <sc-for list="{{ secs }}" as="s" hint-placeholder-count="3">
+                <sc-if value="{{ s.isHead }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex;flex-direction:column;gap:10px;padding-top:12px;border-top:2px solid #1d1a16;">
+                    <h2 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,72px);line-height:0.9;text-transform:uppercase;">{{ s.head }}</h2>
+                    <sc-if value="{{ s.hasSub }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;letter-spacing:0.08em;color:rgba(29,26,22,0.6);"><strong style="font-weight:500;text-transform:uppercase;letter-spacing:0.16em;">Type:</strong> {{ s.sub }}</span></sc-if>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ s.isSec }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:flex;flex-wrap:wrap;align-items:flex-start;flex-direction:{{ s.dir }};margin-left:{{ s.rowMl }};margin-right:{{ s.rowMr }};">
+                    <section style="position:relative;z-index:1;flex:0 1 {{ s.noteW }};min-width:min(100%,300px);box-sizing:border-box;background:{{ s.bg }};padding:clamp(24px,3vw,40px) clamp(22px,3vw,44px) clamp(28px,3vw,40px);transform:rotate({{ s.rot }});box-shadow:0 4px 14px rgba(0,0,0,0.14);display:flex;flex-direction:column;gap:16px;">
+                      <div style="display:flex;flex-direction:column;gap:6px;">
+                        <span style="font-size:11px;letter-spacing:0.12em;color:rgba(29,26,22,0.6);">{{ s.no }}</span>
+                        <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(26px,2.3vw,34px);line-height:0.95;text-transform:uppercase;text-wrap:balance;">{{ s.title }}</h3>
+                      </div>
+                      <sc-if value="{{ s.hasLeadLabel }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(29,26,22,0.6);">{{ s.leadLabel }}</span></sc-if>
+                      <sc-if value="{{ s.hasLead }}" hint-placeholder-val="{{ false }}"><p style="margin:0;font-family:'Newsreader',serif;font-size:18px;line-height:1.45;text-wrap:pretty;">{{ s.lead }}</p></sc-if>
+                      <sc-if value="{{ s.hasPtsLabel }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(29,26,22,0.6);">{{ s.ptsLabel }}</span></sc-if>
+                      <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;">
+                        <sc-for list="{{ s.pts }}" as="p" hint-placeholder-count="3">
+                          <li style="display:grid;grid-template-columns:16px 1fr;gap:4px;font-size:13px;line-height:1.6;color:{{ p.ink }};font-style:{{ p.fs }};text-wrap:pretty;"><span>–</span><span>{{ p.t }}</span></li>
+                        </sc-for>
+                      </ul>
+                      <sc-if value="{{ s.hasImpl }}" hint-placeholder-val="{{ false }}"><p style="margin:0;font-size:13px;line-height:1.6;"><strong style="font-weight:500;letter-spacing:0.08em;text-transform:uppercase;font-size:11px;">Implementation:</strong> {{ s.impl }}</p></sc-if>
+                      <sc-if value="{{ s.hasLink }}" hint-placeholder-val="{{ false }}">
+                        <a href="{{ s.link }}" target="_blank" rel="noopener" style="align-self:flex-start;display:flex;align-items:center;gap:10px;padding:9px 14px;background:#1d1a16;color:#f4f1ea;border-radius:999px;text-decoration:none;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;" style-hover="background:{{ cur.color }};"><span>{{ s.linkLabel }}</span><span>↗</span></a>
+                      </sc-if>
+                      <sc-if value="{{ s.hasEv }}" hint-placeholder-val="{{ false }}">
+                        <div style="display:flex;flex-direction:column;gap:6px;padding:12px 14px;border:1px dashed rgba(29,26,22,0.4);">
+                          <span style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(29,26,22,0.6);">Evidence to show</span>
+                          <span style="font-size:12px;line-height:1.6;color:rgba(29,26,22,0.8);">{{ s.ev }}</span>
+                        </div>
+                      </sc-if>
+                    </section>
+                    <sc-if value="{{ s.hasImg }}" hint-placeholder-val="{{ false }}">
+                      <div style="position:relative;z-index:2;flex:1 1 300px;min-width:min(100%,280px);margin-top:{{ s.picMt }};margin-left:{{ s.picMl }};margin-right:{{ s.picMr }};margin-bottom:{{ s.picMb }};display:grid;">
+                        <sc-for list="{{ s.imgs }}" as="im" hint-placeholder-count="1">
+                          <div style="grid-area:1/1;justify-self:{{ im.js }};align-self:start;width:{{ im.w }};z-index:{{ im.z }};transform:translate({{ im.tx }},{{ im.ty }}) rotate({{ im.rot }});display:flex;flex-direction:column;">
+                            <div data-lb="image" data-title="{{ im.title }}" data-source="{{ im.source }}" data-link="{{ im.link }}" data-link-label="{{ im.linkLabel }}" style="position:relative;cursor:pointer;aspect-ratio:{{ im.ar }};background:#fff;padding:7px;box-sizing:border-box;box-shadow:0 6px 18px rgba(0,0,0,0.22);" style-hover="box-shadow:0 10px 26px rgba(0,0,0,0.3);">
+                              <div role="img" data-oc-background="{{ im.url }}" aria-label="{{ im.title }}" style="width:100%;height:100%;background-color:#141210;background-size:cover;background-position:center top;"></div>
+                              <sc-if value="{{ im.isPh }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:7px;background:#d8d1c4;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(29,26,22,0.5);">Image to come</div></sc-if>
+                              <sc-if value="{{ im.hasMore }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;right:16px;bottom:16px;background:#f2d72a;color:#1d1a16;border-radius:999px;padding:6px 12px;font-size:11px;letter-spacing:0.04em;pointer-events:none;">{{ im.more }}</span></sc-if>
+                              <sc-if value="{{ im.clip }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 20 60" style="position:absolute;top:-26px;right:{{ im.clipR }};width:16px;height:52px;z-index:3;pointer-events:none;"><path d="M6,40 L6,10 A4,4 0 0 1 14,10 L14,48 A6,6 0 0 1 2,48 L2,16" fill="none" stroke="#8e928f" stroke-width="2" stroke-linecap="round"></path></svg></sc-if>
+                            </div>
+                            <sc-if value="{{ im.hasCap }}" hint-placeholder-val="{{ false }}"><span style="align-self:flex-start;margin-top:-2px;background:#1d1a16;color:#f4f1ea;padding:6px 10px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;">{{ im.cap }}</span></sc-if>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ s.hasPets }}" hint-placeholder-val="{{ false }}">
+                      <div style="position:relative;z-index:2;flex:1 1 300px;min-width:min(100%,280px);margin-top:clamp(20px,5vw,70px);margin-left:{{ s.picMl }};margin-right:{{ s.picMr }};min-height:clamp(300px,30vw,420px);">
+                        <sc-for list="{{ petFan }}" as="pf" hint-placeholder-count="3">
+                          <div style="position:absolute;left:{{ pf.l }};top:{{ pf.t }};width:clamp(150px,14vw,200px);z-index:{{ pf.z }};transform:rotate({{ pf.rot }});background:#fff;padding:10px 10px 14px;box-shadow:0 8px 22px rgba(0,0,0,0.2);display:flex;flex-direction:column;gap:8px;">
+                            <div style="aspect-ratio:1;box-sizing:border-box;padding:{{ pf.pad }};background:#F5F6FA;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                              <sc-if value="{{ charactersActive }}"><x-import component-from-global-scope="{{ pf.tag }}" v="{{ pf.k }}" c="{{ pf.k }}" d="{{ pf.k }}" state="{{ pf.state }}" play="1" hint-size="100%,100%" style="width:100%;height:100%;"></x-import></sc-if>
+                            </div>
+                            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;"><span style="font-family:'Newsreader',serif;font-style:italic;font-size:17px;">{{ pf.n }}</span><span style="font-size:10px;letter-spacing:0.08em;color:rgba(29,26,22,0.6);">R{{ pf.turn }}</span></div>
+                          </div>
+                        </sc-for>
+                        <span style="position:absolute;right:4%;bottom:0;background:#1d1a16;color:#f4f1ea;padding:6px 10px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;transform:rotate(-1deg);">First round, midway, latest</span>
+                      </div>
+                    </sc-if>
+                  </div>
+                  <sc-if value="{{ s.hasBoard }}" hint-placeholder-val="{{ false }}">
+                    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(18px,2.4vw,34px) clamp(14px,2vw,28px);margin-top:clamp(24px,4vw,48px);padding:0 2%;">
+                      <sc-for list="{{ s.board }}" as="b" hint-placeholder-count="10">
+                        <div style="position:relative;width:clamp(170px,22%,280px);transform:rotate({{ b.rot }}) translateY({{ b.ty }});display:flex;flex-direction:column;">
+                          <div data-lb="image" data-title="{{ b.title }}" data-source="{{ b.source }}" data-link="{{ b.link }}" data-link-label="{{ b.linkLabel }}" style="position:relative;cursor:pointer;aspect-ratio:1881/1335;background:#fff;padding:7px;box-sizing:border-box;box-shadow:0 6px 16px rgba(0,0,0,0.2);" style-hover="box-shadow:0 12px 26px rgba(0,0,0,0.28);">
+                            <div role="img" data-oc-background="{{ b.url }}" aria-label="{{ b.title }}" style="width:100%;height:100%;background-color:#444;background-size:cover;background-position:center;"></div>
+                            <sc-if value="{{ b.tape }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;top:-10px;left:50%;width:64px;height:20px;margin-left:-32px;background:rgba(246,222,126,0.85);transform:rotate(-4deg);pointer-events:none;"></span></sc-if>
+                          </div>
+                          <span style="align-self:flex-start;margin-top:-2px;background:#1d1a16;color:#f4f1ea;padding:4px 8px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;">{{ b.cap }}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </sc-if>
+                  <sc-if value="{{ s.hasPets }}" hint-placeholder-val="{{ false }}">
+                    <div style="display:flex;flex-direction:column;gap:30px;margin-top:clamp(28px,4vw,52px);">
+                      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;border-bottom:1px dashed rgba(29,26,22,0.35);padding-bottom:12px;">
+                        <h4 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(30px,3.4vw,48px);line-height:0.9;text-transform:uppercase;">The companion trail</h4>
+                        <span style="font-size:11px;letter-spacing:0.08em;color:rgba(29,26,22,0.65);">{{ petTotal }} designs across {{ petRounds }} rounds. Each card shuffles through its round. Pick one to try it.</span>
+                      </div>
+                      <div style="display:flex;flex-wrap:wrap;gap:34px 22px;align-items:flex-start;padding:6px 4px 18px;">
+                        <sc-for list="{{ petStops }}" as="st" hint-placeholder-count="8">
+                          <div style="display:flex;align-items:center;gap:22px;transform:translateY({{ st.ty }});">
+                            <button onClick="{{ st.pick }}" aria-label="Try {{ st.name }}" style="display:flex;flex-direction:column;gap:8px;width:136px;padding:9px 9px 12px;background:#ffffff;border:0;cursor:pointer;text-align:left;font:inherit;color:#1d1a16;transform:rotate({{ st.rot }});box-shadow:{{ st.shadow }};outline:{{ st.outline }};outline-offset:3px;transition:transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms;" style-hover="transform:rotate(0deg) translateY(-6px);box-shadow:0 12px 26px rgba(0,0,0,0.22);">
+                              <div style="display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:0.08em;"><span style="background:#1d1a16;color:#f4f1ea;padding:2px 6px;">R{{ st.turn }}</span><span style="color:rgba(29,26,22,0.55);">{{ st.idx }}/{{ st.count }}</span></div>
+                              <div style="width:118px;height:118px;box-sizing:border-box;padding:{{ st.pad }};background:#F5F6FA;border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+                                <sc-if value="{{ charactersActive }}"><x-import component-from-global-scope="{{ st.tag }}" v="{{ st.k }}" c="{{ st.k }}" d="{{ st.k }}" state="idle" play="1" hint-size="100%,100%" style="width:100%;height:100%;"></x-import></sc-if>
+                              </div>
+                              <span style="font-family:'Newsreader',serif;font-style:italic;font-size:17px;line-height:1;">{{ st.name }}</span>
+                              <span style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(29,26,22,0.6);line-height:1.4;">{{ st.title }}</span>
+                            </button>
+                            <sc-if value="{{ st.notLast }}" hint-placeholder-val="{{ true }}"><span style="width:26px;border-top:2px dashed rgba(29,26,22,0.45);margin-left:-4px;margin-right:-26px;"></span></sc-if>
+                          </div>
+                        </sc-for>
+                      </div>
+                      <div style="display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,56px);align-items:center;">
+                        <div style="flex:1 1 300px;max-width:440px;display:flex;flex-direction:column;gap:12px;">
+                          <div style="position:relative;aspect-ratio:1;background:#ffffff;border-radius:24px;box-shadow:0 10px 30px rgba(20,26,58,0.16);padding:14%;box-sizing:border-box;background-image:radial-gradient(rgba(20,26,58,0.08) 1px, transparent 1px);background-size:18px 18px;transform:rotate(-1deg);">
+                            <sc-if value="{{ charactersActive }}"><x-import component-from-global-scope="{{ hero.tag }}" v="{{ hero.k }}" c="{{ hero.k }}" d="{{ hero.k }}" state="{{ petState }}" play="1" hint-size="100%,100%" style="width:100%;height:100%;"></x-import></sc-if>
+                            <span style="position:absolute;left:18px;top:16px;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#1D5BF5;">● {{ petStateLabel }}</span>
+                          </div>
+                          <span style="font-family:'Newsreader',serif;font-size:17px;"><em>{{ hero.name }}</em> · Round {{ hero.turn }}, {{ hero.title }}</span>
+                        </div>
+                        <div style="flex:1 1 260px;max-width:420px;background:#f6de7e;padding:28px 26px 30px;transform:rotate(1.6deg);box-shadow:0 4px 14px rgba(0,0,0,0.14);display:flex;flex-direction:column;gap:16px;">
+                          <h4 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:30px;line-height:0.95;text-transform:uppercase;">Put it to work</h4>
+                          <span style="font-size:12px;line-height:1.6;">Every companion carries the same set of states. Tap one to see how {{ hero.name }} reacts.</span>
+                          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                            <sc-for list="{{ petChips }}" as="ch" hint-placeholder-count="9">
+                              <button onClick="{{ ch.go }}" style="border:1.5px solid #1d1a16;background:{{ ch.bg }};color:{{ ch.ink }};border-radius:999px;padding:7px 13px;font-family:'DM Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.04em;cursor:pointer;">{{ ch.label }}</button>
+                            </sc-for>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </sc-if>
+                </sc-if>
+              </sc-for>
+            </div>
+          </div>
+          <div data-flap="" style="position:absolute;inset:0;z-index:5;will-change:transform;background:{{ flapColor }};transform-origin:0% 50%;transform:rotateY(100deg);backface-visibility:hidden;pointer-events:none;visibility:hidden;"></div>
+        </div>
+      </div>
+      <div data-nextband="" style="border-radius:4px;width:78%;background:{{ next.color }};color:{{ next.ink }};padding:30px clamp(16px,3vw,32px) 60vh;box-sizing:border-box;visibility:{{ caseVis }};">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(60px,10vw,150px);line-height:0.86;text-transform:uppercase;">{{ next.name }}</span>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ showNext }}" hint-placeholder-val="{{ false }}">
+    <div data-next="" style="position:fixed;right:clamp(14px,2vw,28px);bottom:clamp(14px,3vh,28px);width:clamp(170px,18vw,240px);display:flex;flex-direction:column;align-items:center;z-index:30;transform-origin:100% 100%;">
+      <sc-if value="{{ cardOpen }}" hint-placeholder-val="{{ true }}">
+        <div onClick="{{ goNext }}" style="align-self:stretch;background:{{ next.color }};color:{{ next.ink }};border-radius:16px;padding:16px 16px 34px;min-height:118px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;gap:16px;cursor:pointer;">
+          <span style="font-family:'Newsreader',serif;font-size:22px;line-height:1.1;">{{ next.name }}</span>
+          <span style="font-size:10px;letter-spacing:0.04em;">{{ next.label }}</span>
+        </div>
+      </sc-if>
+      <button onClick="{{ goNext }}" style="position:relative;overflow:hidden;margin-top:{{ pillMt }};width:{{ pillW }};background:#f2d72a;color:#1d1a16;border:0;border-radius:999px;padding:10px 18px;cursor:pointer;font-family:'DM Mono',ui-monospace,monospace;font-size:11px;line-height:1.35;transition:width 400ms cubic-bezier(.22,1.2,.36,1), margin-top 400ms ease;">
+        <span style="position:absolute;left:0;top:0;bottom:0;width:{{ progPct }};background:#f5f0e8;"></span>
+        <span style="position:relative;">{{ pillText }}</span>
+      </button>
+    </div>
+  </sc-if>
+
+  <div data-flight="" style="position:fixed;will-change:transform;backface-visibility:hidden;left:0;top:0;width:10px;height:10px;display:none;z-index:40;pointer-events:none;transform-origin:50% 50%;">
+    <div data-ftab="" style="position:absolute;left:100%;top:36px;width:44px;height:200px;">
+      <svg viewBox="0 0 44 260" preserveAspectRatio="none" style="position:absolute;left:-6px;top:0;width:calc(100% + 6px);height:100%;"><path data-ftabpath="" d="M0,0 L6,0 C6,24 50,20 50,46 L50,214 C50,240 6,236 6,260 L0,260 Z" fill="#000"></path></svg>
+      <span data-ftabl="" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;font-family:'Newsreader',serif;font-size:19px;white-space:nowrap;"></span>
+    </div>
+    <div data-fslab="" style="position:absolute;inset:0;overflow:hidden;"></div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:800},&quot;onBack&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;() =&gt; void&quot;}}">/* __PORTFOLIO_LOGIC__ */</script>
+</body>
+</html>

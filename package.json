@@ -1,0 +1,23 @@
+{
+  "name": "october-calibration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "test": "node tests/static.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "bake:textures": "node scripts/bake-textures-offline.mjs",
+    "bake:textures:browser": "node scripts/bake-textures.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.63.0",
+    "sharp": "0.35.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

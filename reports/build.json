@@ -1,0 +1,16 @@
+{
+  "htmlBytes": 108450,
+  "generatedAssets": {
+    "/assets/react.production.2bfb35cf0e19.js": 10632,
+    "/assets/react-dom.production.5e451c64ee78.js": 130025,
+    "/assets/three-bundle.23bf66d78d51.js": 726298,
+    "/assets/dc-runtime.8ef8832a12e3.js": 36826,
+    "/assets/lightbox.1fa63cfa260b.js": 14233,
+    "/assets/characters.f53f259f50d0.js": 159496,
+    "/assets/portfolio.dc.fce3775c2cc9.html": 75398,
+    "/assets/app.b5e1d4259139.css": 7777,
+    "/assets/textures.650c9950b560.json": 2475,
+    "/assets/bootstrap.6181bdecf50d.js": 8230
+  },
+  "referencedPublicAssets": 86
+}

@@ -1,0 +1,556 @@
+{
+  "06": {
+    "intro": "MoneyMitra. Served as CGO for the MoneyMitra team during the Shark Tank initiative. Contributed primarily to branding, UI design, and product direction.",
+    "sec": [
+      {
+        "no": "1",
+        "title": "Branding and logo exploration",
+        "pts": [
+          "Created approximately 5-6 logo variations.",
+          "Explored different logo directions before finalizing the selected concept.",
+          "Have a Figma file containing rejected logo concepts that can demonstrate the exploration process."
+        ],
+        "ev": "Rejected concepts, logo iterations, and final logo.",
+        "link": "https://www.figma.com/design/DvO5oFNO5WMJJ0m4t9Pg9z/Money-Mitra?node-id=1-2&t=jcrw4rBF1plgXobB-1",
+        "linkLabel": "Open logo explorations in Figma",
+        "imgs": [
+          {
+            "src": "12c6e838-6887-4aa1-a449-baacf881e0d4",
+            "title": "MoneyMitra: logo directions",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/DvO5oFNO5WMJJ0m4t9Pg9z/Money-Mitra?node-id=1-2&t=jcrw4rBF1plgXobB-1",
+            "linkLabel": "Open in Figma",
+            "ar": "1264/1390",
+            "cap": "Six directions in light and dark, with lockups"
+          },
+          {
+            "src": "ed6a37ba-1a4e-4038-83e7-b04c2321d48b",
+            "title": "MoneyMitra: v4 construction studies",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/DvO5oFNO5WMJJ0m4t9Pg9z/Money-Mitra?node-id=1-2&t=jcrw4rBF1plgXobB-1",
+            "linkLabel": "Open in Figma",
+            "ar": "1894/1342",
+            "cap": "Fill, outline and line studies of v4"
+          }
+        ],
+        "carousel": true
+      },
+      {
+        "no": "2",
+        "title": "Product UI and design execution",
+        "pts": [
+          "Personally designed the product screens across the MoneyMitra experience.",
+          "Worked on the landing page, sign-up, dashboard, chatbot, tax comparison, and other product screens.",
+          "The final demo platform differed somewhat from the designs because the team implemented a version they could deliver."
+        ],
+        "ev": "Your original Figma designs, key screens, and selected comparisons with the demo version.",
+        "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+        "linkLabel": "Open MoneyMitra app in Claude Design",
+        "imgs": [
+          {
+            "src": "5e540f28-e8b9-4e91-807c-e62b215ab18d",
+            "title": "MoneyMitra: Dashboard",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "Dashboard with the \"While you were away\" update summary",
+            "wide": true
+          },
+          {
+            "src": "32fe66f3-108e-467c-a87a-6274d6bb6efe",
+            "title": "MoneyMitra: File ITR",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "File ITR, document step",
+            "wide": false
+          },
+          {
+            "src": "2d1b79a2-40c1-4d9b-8fd3-6543bbd54205",
+            "title": "MoneyMitra: Mitra Watch",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "Mitra Watch, regulatory updates",
+            "wide": false
+          },
+          {
+            "src": "f2da9b7a-56ef-4605-996c-82351d1e1449",
+            "title": "MoneyMitra: Learn",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "Learn, tax education",
+            "wide": false
+          },
+          {
+            "src": "f530f16f-5aaf-4cd8-bd04-15aaca5a409c",
+            "title": "MoneyMitra: Mobile",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "Mobile: home, journey and taxes",
+            "wide": false
+          }
+        ]
+      },
+      {
+        "head": "In depth"
+      },
+      {
+        "no": "1",
+        "title": "My Journey. Gamified financial progress",
+        "leadLabel": "Problem identified",
+        "lead": "Financial recommendations are often presented as cards. You wanted users to understand where they currently stand, how far they are from a financial goal, and what progress they have made.",
+        "ptsLabel": "Your design approach",
+        "pts": [
+          "Created a pixel-style character to represent the user's financial journey.",
+          "Designed a game-like visualization of the user's current position and distance from their goals.",
+          "Designed a timeline to communicate progress.",
+          "Explored personalized recommendations linked to the user's journey.",
+          "Designed different character progression states to represent changes in the user's progress.",
+          "Kept the gamification focused on personal progress, with the rest of the platform retaining a professional financial-product interface."
+        ],
+        "impl": "Your team incorporated the gamified experience into the demo platform.",
+        "ev": "Pixel character explorations, character progression states, timeline screens, personalized recommendation cards, and the implemented demo.",
+        "imgs": [
+          {
+            "src": "08d462fc-454c-44ef-a5e8-8b7b2fa24686",
+            "title": "MoneyMitra: My Journey on desktop and mobile",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "My Journey on desktop and mobile",
+            "wide": true
+          },
+          {
+            "src": "6a8b1dfc-97c2-4700-b0bc-0f2b5296eba3",
+            "title": "MoneyMitra: My Journey timeline",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "Journey timeline with milestones",
+            "wide": false
+          },
+          {
+            "src": "d33fa999-0259-4957-8853-dd907b6e44f7",
+            "title": "MoneyMitra: Pixel characters",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/ea2979ae-d07c-4e53-8cc4-ac1b944712e7?file=MoneyMitra+App.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "16/9",
+            "cap": "Pixel character lineup",
+            "wide": false
+          }
+        ]
+      },
+      {
+        "no": "2",
+        "title": "Product design and collaboration",
+        "pts": [
+          "Personally designed the MoneyMitra product UI, including the landing page, sign-up, dashboard, chatbot, tax comparison, and additional screens.",
+          "The team worked on implementation of onboarding, document uploads, and tax-saving recommendations.",
+          "The final demo differed in some respects from your original designs."
+        ],
+        "ev": "Original Figma screens and selected demo comparisons."
+      },
+      {
+        "no": "3",
+        "title": "Product strategy and CGO contribution",
+        "pts": [
+          "Proposed speaking with more potential users and gathering additional insights.",
+          "Proposed discussing product direction with mentors.",
+          "Advocated for exploring a gamified experience to make financial progress easier to visualize.",
+          "Proposed integrating a learning platform focused on tax education, creating another potential entry point for users."
+        ],
+        "ev": "Relevant product discussions, proposed flows, learning-screen explorations, and the rationale behind your decisions."
+      },
+      {
+        "head": "Leverageant"
+      },
+      {
+        "no": "1",
+        "title": "Logo, landing page and platform UI",
+        "ptsLabel": "",
+        "pts": [
+          "Explored approximately 3-4 logo variations.",
+          "Created sketches and alternative concepts.",
+          "The team ultimately retained a logo direction it had developed earlier.",
+          "Made minor modifications to that existing direction.",
+          "Reviewed and improved the existing landing page and platform UI.",
+          "Suggested changes to layout and color usage.",
+          "Identified repetitive or unnecessary elements and recommended removing them.",
+          "Suggested introducing new elements where they could improve the interface.",
+          "Focused on simplifying the existing experience rather than designing entirely new screens."
+        ],
+        "ev": "Sketches, rejected concepts, logo variations, and the modified logo alongside the original. Before-and-after screenshots, annotated UI comparisons, layout changes, and examples of removed or introduced elements."
+      }
+    ]
+  },
+  "05": {
+    "intro": "Aetherion. Screen recreation across the platform, with the Audit and ACT screens as the major chunk, and the virtual pet concept.",
+    "sec": [
+      {
+        "no": "1",
+        "title": "Audit and ACT screens. UI recreation",
+        "lead": "Recreated the existing developer-built screens across the whole platform in Figma, including detailed UI elements and variations. The Audit and ACT screens made up a major chunk of that work.",
+        "ptsLabel": "Audit screens",
+        "pts": [
+          "Audit states, tokens and costs.",
+          "Controls and policies.",
+          "Different table layouts and states.",
+          "Document presentation and layout.",
+          "Document download states and presentation.",
+          "AI-assisted document experience.",
+          "ACT screens: reviewed the existing screens on the website and recreated them in Figma under a tight turnaround.",
+          "Small UI adjustments to match the existing live product."
+        ],
+        "link": "https://www.figma.com/design/7vQGCIAouDeLhdqXeGObgh/Aetherion-All-Screen-Update?node-id=555-62663&t=Csc1VAR9TjBsXZOb-1",
+        "linkLabel": "Open in Figma",
+        "ev": "Screenshots of recreated screens, tables, states, document views and AI-assisted views, alongside the live ACT screens.",
+        "imgs": [
+          {
+            "src": "f3213bcf-8c4c-4537-ae51-e01d2ed6ace7",
+            "title": "ACT Agent: audit report, evidence ledger",
+            "source": "Figma",
+            "ar": "1820/1562",
+            "cap": "ACT Agent: audit report, evidence ledger",
+            "link": "https://www.figma.com/design/7vQGCIAouDeLhdqXeGObgh/Aetherion-All-Screen-Update?node-id=555-62663&t=Csc1VAR9TjBsXZOb-1",
+            "linkLabel": "Open in Figma"
+          },
+          {
+            "src": "8c11c899-fa0d-4838-9503-38333dc2a7c3",
+            "title": "ACT Studio: tools",
+            "source": "Figma",
+            "ar": "2360/1586",
+            "link": "https://www.figma.com/design/7vQGCIAouDeLhdqXeGObgh/Aetherion-All-Screen-Update?node-id=555-62663&t=Csc1VAR9TjBsXZOb-1",
+            "linkLabel": "Open in Figma"
+          },
+          {
+            "src": "2e7b5a45-4aa2-47ab-8a9f-dbc62665594c",
+            "title": "ACT Studio: new component",
+            "source": "Figma",
+            "ar": "2318/1590",
+            "link": "https://www.figma.com/design/7vQGCIAouDeLhdqXeGObgh/Aetherion-All-Screen-Update?node-id=555-62663&t=Csc1VAR9TjBsXZOb-1",
+            "linkLabel": "Open in Figma"
+          },
+          {
+            "src": "cb06f270-398b-49bd-b9ed-2bd41ce7e5d4",
+            "title": "Scheduled agents: schedule an agent",
+            "source": "Figma",
+            "ar": "2020/1390",
+            "link": "https://www.figma.com/design/7vQGCIAouDeLhdqXeGObgh/Aetherion-All-Screen-Update?node-id=555-62663&t=Csc1VAR9TjBsXZOb-1",
+            "linkLabel": "Open in Figma"
+          }
+        ]
+      },
+      {
+        "no": "2",
+        "title": "Virtual pet. Concept and interaction exploration",
+        "pts": [
+          "Explored approximately 20 different pet styles before choosing a direction.",
+          "Designed default, thinking, working, task-completed and error states.",
+          "Explored different expressions, interaction flows and animation states.",
+          "Investigated how users could interact with the pet and use it to initiate tasks.",
+          "Further exploration of the pet's utility and interactions remains ongoing."
+        ],
+        "ev": "The 20 style explorations, selected concept, state variations, interaction screens and animation explorations.",
+        "pets": true
+      }
+    ]
+  },
+  "04": {
+    "intro": "MVUE. Flyer, standee, website updates, logo animations, and platform visual updates.",
+    "sec": [
+      {
+        "no": "4.1",
+        "title": "Flyer design",
+        "pts": [
+          "Made minor microcopy changes to the existing design."
+        ],
+        "ev": "Final standee and, if available, a before-and-after comparison of the copy.",
+        "imgs": [
+          {
+            "src": "7dc57d66-eb69-4b74-84f4-c0517c4c5060",
+            "title": "MVUE: flyer, front",
+            "source": "Flyer front draft, 28 Sept",
+            "ar": "1648/2331",
+            "cap": "Flyer front, draft of 28 Sept"
+          }
+        ],
+        "inline": true
+      },
+      {
+        "no": "4.2",
+        "title": "Standee",
+        "pts": [
+          "Explored different layouts.",
+          "Completed approximately two to three iterations.",
+          "The design was approved after the iterations.",
+          "Made minor adjustments following the main design work."
+        ],
+        "ev": "Initial layout, two to three iterations, and the approved design.",
+        "imgs": [
+          {
+            "src": "a3c9a65e-a241-4ef1-a99c-4d2a50a1a641",
+            "title": "MVUE: standee",
+            "source": "Final standee draft, 30 Sept",
+            "ar": "1648/3389",
+            "cap": "Final standee, draft of 30 Sept"
+          }
+        ],
+        "inline": true
+      },
+      {
+        "no": "4.3",
+        "title": "Wix marketing website",
+        "pts": [
+          "Used Wix for the first time while working on the existing marketing website.",
+          "Changed section backgrounds and colors.",
+          "Worked on animation-related updates.",
+          "Encountered an editing limitation where using Ctrl+Z could revert the work much further back than intended.",
+          "Worked on the responsive mobile presentation of the marketing website.",
+          "Implemented an automated, infinitely looping logo carousel or slider.",
+          "Updated the marketing site's landing page.",
+          "Worked on how the page adapts to mobile screens.",
+          "Changed colors within the platform.",
+          "Completed additional small design changes and supporting deliverables.",
+          "Received and worked on tasks assigned by Sanjana."
+        ],
+        "ev": "Desktop and mobile screenshots, section background changes, color updates, and before-and-after comparisons. A short screen recording or GIF demonstrating the continuous animation. Desktop landing page, mobile layout, and responsive comparisons.",
+        "imgs": [
+          {
+            "src": "a61e24d2-52ae-46bf-b8cc-f49c09d90a74",
+            "title": "MVUE: customers and partners logo section",
+            "source": "MVUE website (Wix)",
+            "ar": "2996/1718",
+            "cap": "Customers and partners logo section"
+          }
+        ]
+      }
+    ]
+  },
+  "03": {
+    "intro": "Aegis is an AI agent security gateway focused on verifying agent identity, checking actions against security policies, tracking data access, and blocking unsafe actions.",
+    "sec": [
+      {
+        "no": "3.1",
+        "title": "Logo exploration",
+        "pts": [
+          "Created approximately 9-10 logo variations.",
+          "Explored different symbols and logo concepts.",
+          "Developed the concepts around Aegis's role as a security layer between AI agents and other platforms, intended to control access to information and protect data.",
+          "Focused on symbol exploration rather than typography variations."
+        ],
+        "ev": "Initial sketches, multiple logo variations, and logo explorations.",
+        "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+        "linkLabel": "Open logo explorations in Figma",
+        "board": [
+          {
+            "src": "31066133-c86e-4559-9677-3619bffaf259",
+            "title": "Aegis: logo concept v1",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v1"
+          },
+          {
+            "src": "ef407d04-6cd8-412e-93a6-044a9246d6c5",
+            "title": "Aegis: logo concept v2",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v2"
+          },
+          {
+            "src": "98ea022b-39bc-49af-a8f1-a876251baff3",
+            "title": "Aegis: logo concept v3",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v3"
+          },
+          {
+            "src": "2604b168-3756-4735-8243-e5251438c5fc",
+            "title": "Aegis: logo concept v4",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v4"
+          },
+          {
+            "src": "d1ba193a-d6d0-4e0c-be72-67397d5fd37c",
+            "title": "Aegis: logo concept v5",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v5"
+          },
+          {
+            "src": "e268d485-56bc-420f-9f00-5d9e4d779e45",
+            "title": "Aegis: logo concept v6",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v6"
+          },
+          {
+            "src": "1df5019b-f6c9-494d-9571-9ddd58eb1723",
+            "title": "Aegis: logo concept v7",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v7"
+          },
+          {
+            "src": "9557d21a-71f1-4f0d-b84b-42551d9d523e",
+            "title": "Aegis: logo concept v8",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v8"
+          },
+          {
+            "src": "32628fff-ad43-47dd-a395-58a42909f0a2",
+            "title": "Aegis: logo concept v9",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v9"
+          },
+          {
+            "src": "1128865e-e428-4e6b-a41f-0915f37758e1",
+            "title": "Aegis: logo concept v10",
+            "source": "Figma",
+            "link": "https://www.figma.com/design/jQsMAj0KBmPJpJNy09qtCr/Aegis-%7C-Aditya-Verma?node-id=0-1&t=AbluU94GMa1mFY5i-1",
+            "linkLabel": "Open in Figma",
+            "cap": "v10"
+          }
+        ]
+      }
+    ]
+  },
+  "02": {
+    "intro": "Calfus One. Screen recreation and UX improvements for the Tracks platform.",
+    "sec": [
+      {
+        "no": "2.1",
+        "title": "Screen recreation",
+        "leadLabel": "Recreated existing screens for the Tracks platform",
+        "pts": [
+          "Dashboard",
+          "Forecast and Actuals",
+          "SOW Master",
+          "PO Tracker",
+          "Allocation Economics",
+          "Employee Cost Project",
+          "Audit Trail"
+        ],
+        "img": "e465e426-8c3f-48ba-9108-286c275f2223",
+        "imgTitle": "Calfus One: TRAX dashboard",
+        "imgLink": "https://claude.ai/design/p/2633225b-a151-4dab-84fc-636ba26b8f22?file=Athena+Home+v2.dc.html&via=share",
+        "imgLinkLabel": "Open in Claude Design"
+      },
+      {
+        "no": "2.2",
+        "title": "UX improvements",
+        "pts": [
+          "Reduced the amount of information presented at once.",
+          "Explored progressive disclosure to make complex screens easier to navigate.",
+          "Considered how the layouts could adapt responsively to different screen sizes.",
+          "Made smaller improvements to the existing interfaces rather than designing new screens from scratch."
+        ],
+        "imgs": [
+          {
+            "src": "e53e17ae-8246-45c3-81e7-69da6f63ca6a",
+            "title": "Calfus One: Athena requisitions",
+            "source": "Claude Design",
+            "link": "https://claude.ai/design/p/2633225b-a151-4dab-84fc-636ba26b8f22?file=Athena+Home+v2.dc.html&via=share",
+            "linkLabel": "Open in Claude Design",
+            "ar": "2984/1684",
+            "cap": "Athena requisitions"
+          }
+        ]
+      }
+    ]
+  },
+  "01": {
+    "intro": "Learning. Topics assigned by my mentor, and a UXplore session for the UX team.",
+    "sec": [
+      {
+        "head": "1.1 Trust in AI",
+        "sub": "Research, product exploration and interaction-flow design"
+      },
+      {
+        "no": "1.1",
+        "title": "Trust in AI",
+        "pts": [
+          "Step 1. Understanding the problem: Explored what trust means in AI. Investigated factors that make people trust or distrust AI.",
+          "Step 2. Existing product exploration: Examined how ChatGPT, Claude and Gemini respond to user questions. Explored trust mechanisms and interactions that can change a user's confidence in an AI product.",
+          "Step 3. Designing for appropriate trust: Developed a flow exploring how an AI experience could communicate reliability and support user judgment.",
+          "Step 4. Trust and control exploration: Explored how much supporting reference information is sufficient, and when it becomes excessive. Considered what should happen when AI provides an incorrect answer. Examined the relationship between trust and user control. Explored scenarios that challenge user trust and included a final reflection.",
+          "Step 5. Final reflection: Reflected on how consistent, useful interactions can build reliance on AI over time. Documented how repeated use also revealed AI's limitations and potential to provide incorrect information."
+        ],
+        "imgs": [
+          {
+            "src": "98048b39-2ada-4149-af88-ebb4807bacfa",
+            "title": "Trust in AI: parameters of trust",
+            "source": "Miro",
+            "ar": "1200/1106",
+            "cap": "Parameters of trust in AI"
+          }
+        ],
+        "ev": "Research steps, comparative examples, interaction flow, trust-versus-control exploration, and final reflection."
+      },
+      {
+        "head": "1.2 UX of AI Hallucinations",
+        "sub": "Comparative AI product research and UX exploration"
+      },
+      {
+        "no": "1.2",
+        "title": "UX of AI Hallucinations",
+        "pts": [
+          "Step 1. Initial understanding: Documented initial assumptions, understanding and opinions about AI hallucinations.",
+          "Step 2. Comparative analysis: Created a comparison table covering ChatGPT, Claude, Perplexity and Gemini.",
+          "Step 3. Response-state analysis: Explored how the platforms behave when answers are high-confidence, uncertain or incorrect.",
+          "Step 4. Confidence consequences: Investigated the UX implications of how AI communicates confidence and uncertainty.",
+          "Step 5. Interface exploration: Explored four interaction directions: collapse, challenge, verify and answer."
+        ],
+        "imgs": [
+          {
+            "src": "93ce5cc0-e5fc-4381-b79d-38d18cffbe6a",
+            "title": "UX of AI Hallucinations: 2x2 framework",
+            "source": "Learning topic",
+            "ar": "1171/842",
+            "cap": "2x2 framework"
+          }
+        ],
+        "ev": "Initial assumptions, comparison table, example responses, confidence-state analysis, and the four interface directions."
+      },
+      {
+        "head": "1.3 UXplore. Deceptive Patterns",
+        "sub": "Team learning session and interactive activity"
+      },
+      {
+        "no": "1.3",
+        "title": "Session and activity",
+        "pts": [
+          "Prepared a presentation to teach the UX team about deceptive design patterns.",
+          "Created a small interactive game in which participants selected from different options.",
+          "Used the activity to help participants recognize and think critically about deceptive design choices."
+        ],
+        "img": "546612e4-94a2-420d-b9ee-407cd8834569",
+        "imgTitle": "UXplore: The Line",
+        "imgLink": "https://claude.ai/design/p/284870ed-1de6-4b40-bf2a-6cb2cf2dee35?file=THE+LINE.dc.html&via=share",
+        "imgLinkLabel": "Open The Line"
+      }
+    ]
+  }
+}

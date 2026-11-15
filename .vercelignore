@@ -1,0 +1,7 @@
+node_modules/
+dist/
+test-results/
+reports/
+public/assets/original/*.png
+public/assets/original/*.mp3
+public/assets/original/*.mp4

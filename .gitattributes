@@ -1,0 +1,2 @@
+# Preserve extracted upstream bundles, including their shader source formatting.
+src/vendor/** -whitespace

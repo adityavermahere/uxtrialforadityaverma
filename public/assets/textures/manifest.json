@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "sourceHash": "fccb2e603ae3d432d329292a5594acb84696d0f52acbb8b287c416ac883b2710",
+  "recipeSha256": "3dac0409bc1df5915f5175e20cd8fa8212c3e6ccce99b17c4376d98e143630e2",
+  "textures": [
+    {
+      "key": "gen:0",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/d3c196b2cb6f6e08.webp",
+      "bump": "/assets/textures/2b558e91c2dcf28a.webp"
+    },
+    {
+      "key": "gen:1",
+      "width": 1024,
+      "height": 1024,
+      "color": "/assets/textures/15f840e8829deb47.webp",
+      "bump": "/assets/textures/10a4bb2537a063c9.webp"
+    },
+    {
+      "key": "gen:2",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/0e5ed458e18cc996.webp",
+      "bump": "/assets/textures/bbf32572ca311bbe.webp"
+    },
+    {
+      "key": "gen:3",
+      "width": 1024,
+      "height": 1024,
+      "color": "/assets/textures/f4a224f0c956b139.webp",
+      "bump": "/assets/textures/0e26c4b8f4bc4613.webp"
+    },
+    {
+      "key": "gen:4",
+      "width": 1024,
+      "height": 1024,
+      "color": "/assets/textures/c0efd4b626d89ec1.webp",
+      "bump": "/assets/textures/5cef74797a6fcd70.webp"
+    },
+    {
+      "key": "gen:5",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/811455b59772de13.webp",
+      "bump": "/assets/textures/f8d02e53266b592e.webp"
+    },
+    {
+      "key": "gen:6",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/6ab4666811f9452b.webp",
+      "bump": "/assets/textures/f9b4e350e83e5c6a.webp"
+    },
+    {
+      "key": "gen:7",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/cd4e53d4a4de6fbc.webp",
+      "bump": "/assets/textures/ee8c0afe3c0c386b.webp"
+    },
+    {
+      "key": "gen:8",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/dfc053c136025618.webp",
+      "bump": "/assets/textures/d7ae26b6760b110c.webp"
+    },
+    {
+      "key": "gen:9",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/bb0d8ba83fa926eb.webp",
+      "bump": "/assets/textures/f8d02e53266b592e.webp"
+    },
+    {
+      "key": "gen:10",
+      "width": 512,
+      "height": 512,
+      "color": "/assets/textures/d4497d445227a239.webp",
+      "bump": "/assets/textures/592c9a2fd9f0ae96.webp"
+    },
+    {
+      "key": "gen:11",
+      "width": 1024,
+      "height": 1024,
+      "color": "/assets/textures/b5a89e39b4619c54.webp",
+      "bump": "/assets/textures/209aabc75f1b1d3e.webp"
+    }
+  ]
+}

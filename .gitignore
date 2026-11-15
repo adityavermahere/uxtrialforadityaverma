@@ -1,0 +1,8 @@
+node_modules/
+dist/
+test-results/
+.vercel/
+__pycache__/
+public/assets/original/*.png
+public/assets/original/*.mp3
+public/assets/original/*.mp4

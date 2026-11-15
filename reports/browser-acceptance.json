@@ -1,0 +1,1509 @@
+{
+  "baseURL": "http://127.0.0.1:4187",
+  "generatedAt": "2026-11-15T19:15:38.330Z",
+  "browser": "153.0.8010.12",
+  "rendering": "Headless Chromium with software GPU; local timings are not a production/mobile hardware benchmark.",
+  "screenshotsEnabled": false,
+  "testRenderScale": 0.25,
+  "testRenderScaleNote": "Test-only pixel ratio applied after the initial door phase; production scene configuration is unchanged. This run cannot establish production visual quality or frame rate.",
+  "checks": [
+    {
+      "name": "desktop cold startup defers portfolio, characters, audio and video",
+      "passed": true,
+      "elapsedMs": 20585,
+      "requests": 40
+    },
+    {
+      "name": "enter room button works with reduced motion",
+      "passed": true
+    },
+    {
+      "name": "lamp toggles through canvas hit testing",
+      "passed": true
+    },
+    {
+      "name": "gramophone toggles music through canvas hit testing",
+      "passed": true
+    },
+    {
+      "name": "drawer loads the six-folder portfolio without video or character code",
+      "passed": true
+    },
+    {
+      "name": "case study and image lightbox open and close",
+      "passed": true
+    },
+    {
+      "name": "video remains deferred through case navigation and plays when opened",
+      "passed": true
+    },
+    {
+      "name": "character bundle loads only for Aetherion and character state controls work",
+      "passed": true
+    },
+    {
+      "name": "gallery frame opens its matching Shark Tank case",
+      "passed": true
+    },
+    {
+      "name": "portfolio returns to room and room returns to door",
+      "passed": true
+    },
+    {
+      "name": "390px mobile reduced-motion room, portfolio and case navigation work without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "desktop and mobile runs have no JavaScript, HTTP or unexpected request errors",
+      "passed": true
+    }
+  ],
+  "runs": [
+    {
+      "name": "desktop",
+      "startup": {
+        "elapsedMs": 20584.800000000745,
+        "navigation": [
+          {
+            "transferSize": 108750,
+            "encodedBodySize": 108450,
+            "decodedBodySize": 108450,
+            "domContentLoadedMs": 77.5
+          }
+        ],
+        "resources": [
+          {
+            "name": "/assets/app.b5e1d4259139.css",
+            "initiatorType": "link",
+            "transferSize": 8077,
+            "encodedBodySize": 7777,
+            "durationMs": 9.5
+          },
+          {
+            "name": "/assets/bootstrap.6181bdecf50d.js",
+            "initiatorType": "script",
+            "transferSize": 8530,
+            "encodedBodySize": 8230,
+            "durationMs": 15
+          },
+          {
+            "name": "/assets/react.production.2bfb35cf0e19.js",
+            "initiatorType": "script",
+            "transferSize": 10932,
+            "encodedBodySize": 10632,
+            "durationMs": 16
+          },
+          {
+            "name": "/assets/react-dom.production.5e451c64ee78.js",
+            "initiatorType": "script",
+            "transferSize": 130325,
+            "encodedBodySize": 130025,
+            "durationMs": 17.40000000037253
+          },
+          {
+            "name": "/assets/three-bundle.23bf66d78d51.js",
+            "initiatorType": "script",
+            "transferSize": 726598,
+            "encodedBodySize": 726298,
+            "durationMs": 21.800000000745058
+          },
+          {
+            "name": "/assets/dc-runtime.8ef8832a12e3.js",
+            "initiatorType": "script",
+            "transferSize": 37126,
+            "encodedBodySize": 36826,
+            "durationMs": 17
+          },
+          {
+            "name": "/assets/textures.650c9950b560.json",
+            "initiatorType": "fetch",
+            "transferSize": 2775,
+            "encodedBodySize": 2475,
+            "durationMs": 2.799999998882413
+          },
+          {
+            "name": "/assets/textures/d3c196b2cb6f6e08.webp",
+            "initiatorType": "img",
+            "transferSize": 52744,
+            "encodedBodySize": 52444,
+            "durationMs": 7.399999998509884
+          },
+          {
+            "name": "/assets/textures/2b558e91c2dcf28a.webp",
+            "initiatorType": "img",
+            "transferSize": 76540,
+            "encodedBodySize": 76240,
+            "durationMs": 11.099999999627471
+          },
+          {
+            "name": "/assets/textures/15f840e8829deb47.webp",
+            "initiatorType": "img",
+            "transferSize": 169500,
+            "encodedBodySize": 169200,
+            "durationMs": 12.900000000372529
+          },
+          {
+            "name": "/assets/textures/0e5ed458e18cc996.webp",
+            "initiatorType": "img",
+            "transferSize": 89580,
+            "encodedBodySize": 89280,
+            "durationMs": 14.100000001490116
+          },
+          {
+            "name": "/assets/textures/bbf32572ca311bbe.webp",
+            "initiatorType": "img",
+            "transferSize": 76388,
+            "encodedBodySize": 76088,
+            "durationMs": 14.400000000372529
+          },
+          {
+            "name": "/assets/textures/10a4bb2537a063c9.webp",
+            "initiatorType": "img",
+            "transferSize": 205464,
+            "encodedBodySize": 205164,
+            "durationMs": 17.200000001117587
+          },
+          {
+            "name": "/assets/textures/f4a224f0c956b139.webp",
+            "initiatorType": "img",
+            "transferSize": 156658,
+            "encodedBodySize": 156358,
+            "durationMs": 22
+          },
+          {
+            "name": "/assets/textures/0e26c4b8f4bc4613.webp",
+            "initiatorType": "img",
+            "transferSize": 206058,
+            "encodedBodySize": 205758,
+            "durationMs": 25.299999998882413
+          },
+          {
+            "name": "/assets/textures/c0efd4b626d89ec1.webp",
+            "initiatorType": "img",
+            "transferSize": 133676,
+            "encodedBodySize": 133376,
+            "durationMs": 25
+          },
+          {
+            "name": "/assets/textures/5cef74797a6fcd70.webp",
+            "initiatorType": "img",
+            "transferSize": 226052,
+            "encodedBodySize": 225752,
+            "durationMs": 27.90000000037253
+          },
+          {
+            "name": "/assets/textures/811455b59772de13.webp",
+            "initiatorType": "img",
+            "transferSize": 41258,
+            "encodedBodySize": 40958,
+            "durationMs": 24.5
+          },
+          {
+            "name": "/assets/textures/f8d02e53266b592e.webp",
+            "initiatorType": "img",
+            "transferSize": 352,
+            "encodedBodySize": 52,
+            "durationMs": 25.40000000037253
+          },
+          {
+            "name": "/assets/textures/6ab4666811f9452b.webp",
+            "initiatorType": "img",
+            "transferSize": 96436,
+            "encodedBodySize": 96136,
+            "durationMs": 28.299999998882413
+          },
+          {
+            "name": "/assets/textures/f9b4e350e83e5c6a.webp",
+            "initiatorType": "img",
+            "transferSize": 154574,
+            "encodedBodySize": 154274,
+            "durationMs": 38.69999999925494
+          },
+          {
+            "name": "/assets/textures/cd4e53d4a4de6fbc.webp",
+            "initiatorType": "img",
+            "transferSize": 214724,
+            "encodedBodySize": 214424,
+            "durationMs": 40.29999999888241
+          },
+          {
+            "name": "/assets/textures/ee8c0afe3c0c386b.webp",
+            "initiatorType": "img",
+            "transferSize": 250276,
+            "encodedBodySize": 249976,
+            "durationMs": 41.79999999888241
+          },
+          {
+            "name": "/assets/textures/dfc053c136025618.webp",
+            "initiatorType": "img",
+            "transferSize": 193540,
+            "encodedBodySize": 193240,
+            "durationMs": 39.40000000037253
+          },
+          {
+            "name": "/assets/textures/d7ae26b6760b110c.webp",
+            "initiatorType": "img",
+            "transferSize": 142700,
+            "encodedBodySize": 142400,
+            "durationMs": 39.90000000037253
+          },
+          {
+            "name": "/assets/textures/bb0d8ba83fa926eb.webp",
+            "initiatorType": "img",
+            "transferSize": 124272,
+            "encodedBodySize": 123972,
+            "durationMs": 40.20000000111759
+          },
+          {
+            "name": "/assets/textures/d4497d445227a239.webp",
+            "initiatorType": "img",
+            "transferSize": 278270,
+            "encodedBodySize": 277970,
+            "durationMs": 48.20000000111759
+          },
+          {
+            "name": "/assets/textures/592c9a2fd9f0ae96.webp",
+            "initiatorType": "img",
+            "transferSize": 216452,
+            "encodedBodySize": 216152,
+            "durationMs": 50.19999999925494
+          },
+          {
+            "name": "/assets/textures/209aabc75f1b1d3e.webp",
+            "initiatorType": "img",
+            "transferSize": 723894,
+            "encodedBodySize": 723594,
+            "durationMs": 55.59999999962747
+          },
+          {
+            "name": "/assets/textures/b5a89e39b4619c54.webp",
+            "initiatorType": "img",
+            "transferSize": 898784,
+            "encodedBodySize": 898484,
+            "durationMs": 57
+          },
+          {
+            "name": "/assets/original/796c5dbc-19f3-4f16-82eb-bd70d4375696.woff2",
+            "initiatorType": "css",
+            "transferSize": 8988,
+            "encodedBodySize": 8688,
+            "durationMs": 17
+          },
+          {
+            "name": "/assets/original/4b00ec6b-82a9-4af8-aa27-6ea6b16dd699.woff2",
+            "initiatorType": "css",
+            "transferSize": 38076,
+            "encodedBodySize": 37776,
+            "durationMs": 2.699999999254942
+          },
+          {
+            "name": "/assets/media/702ce176-3746-4b5c-b0ad-3a6b06108006-room.d064768117fc.webp",
+            "initiatorType": "img",
+            "transferSize": 16090,
+            "encodedBodySize": 15790,
+            "durationMs": 18.200000001117587
+          },
+          {
+            "name": "/assets/media/26bf8d8a-5e0e-45c8-ab41-daa650699202-full.f2752f69c662.webp",
+            "initiatorType": "img",
+            "transferSize": 9848,
+            "encodedBodySize": 9548,
+            "durationMs": 19.199999999254942
+          },
+          {
+            "name": "/assets/media/283e7bcb-02de-475b-9d9f-9cc2c03d5742-full.e9784e283949.webp",
+            "initiatorType": "img",
+            "transferSize": 41196,
+            "encodedBodySize": 40896,
+            "durationMs": 19.59999999962747
+          },
+          {
+            "name": "/assets/media/3eb09b18-06c7-49a5-a7ff-0cf6af297965-room.ef50f23d4707.webp",
+            "initiatorType": "img",
+            "transferSize": 10038,
+            "encodedBodySize": 9738,
+            "durationMs": 19.799999998882413
+          },
+          {
+            "name": "/assets/media/ac41b911-eda0-44fd-a322-78c096a44742-full.1d350023fff6.webp",
+            "initiatorType": "img",
+            "transferSize": 40226,
+            "encodedBodySize": 39926,
+            "durationMs": 19.800000000745058
+          },
+          {
+            "name": "/assets/media/1a44ea55-4a62-4b22-9699-ab25a9b87193-full.6f829798b8a7.webp",
+            "initiatorType": "img",
+            "transferSize": 8342,
+            "encodedBodySize": 8042,
+            "durationMs": 19.899999998509884
+          },
+          {
+            "name": "/assets/media/63ca9260-e4f1-4204-a3ed-1617b9eee51c-room.ec33eb2058d4.webp",
+            "initiatorType": "img",
+            "transferSize": 38200,
+            "encodedBodySize": 37900,
+            "durationMs": 22.799999998882413
+          }
+        ],
+        "marks": [
+          {
+            "name": "oc:bootstrap",
+            "startTimeMs": 28.800000000745058
+          },
+          {
+            "name": "oc-scene-start",
+            "startTimeMs": 104.80000000074506
+          },
+          {
+            "name": "oc-scene-ready",
+            "startTimeMs": 6475.5
+          }
+        ],
+        "scene": {
+          "phase": "door",
+          "lite": true,
+          "reducedMotion": true,
+          "pixelRatio": 1,
+          "geometries": 771,
+          "textures": 84,
+          "drawCalls": 1,
+          "triangles": 1
+        }
+      },
+      "completed": {
+        "elapsedMs": 128248,
+        "navigation": [
+          {
+            "transferSize": 108750,
+            "encodedBodySize": 108450,
+            "decodedBodySize": 108450,
+            "domContentLoadedMs": 77.5
+          }
+        ],
+        "resources": [
+          {
+            "name": "/assets/app.b5e1d4259139.css",
+            "initiatorType": "link",
+            "transferSize": 8077,
+            "encodedBodySize": 7777,
+            "durationMs": 9.5
+          },
+          {
+            "name": "/assets/bootstrap.6181bdecf50d.js",
+            "initiatorType": "script",
+            "transferSize": 8530,
+            "encodedBodySize": 8230,
+            "durationMs": 15
+          },
+          {
+            "name": "/assets/react.production.2bfb35cf0e19.js",
+            "initiatorType": "script",
+            "transferSize": 10932,
+            "encodedBodySize": 10632,
+            "durationMs": 16
+          },
+          {
+            "name": "/assets/react-dom.production.5e451c64ee78.js",
+            "initiatorType": "script",
+            "transferSize": 130325,
+            "encodedBodySize": 130025,
+            "durationMs": 17.40000000037253
+          },
+          {
+            "name": "/assets/three-bundle.23bf66d78d51.js",
+            "initiatorType": "script",
+            "transferSize": 726598,
+            "encodedBodySize": 726298,
+            "durationMs": 21.800000000745058
+          },
+          {
+            "name": "/assets/dc-runtime.8ef8832a12e3.js",
+            "initiatorType": "script",
+            "transferSize": 37126,
+            "encodedBodySize": 36826,
+            "durationMs": 17
+          },
+          {
+            "name": "/assets/textures.650c9950b560.json",
+            "initiatorType": "fetch",
+            "transferSize": 2775,
+            "encodedBodySize": 2475,
+            "durationMs": 2.799999998882413
+          },
+          {
+            "name": "/assets/textures/d3c196b2cb6f6e08.webp",
+            "initiatorType": "img",
+            "transferSize": 52744,
+            "encodedBodySize": 52444,
+            "durationMs": 7.399999998509884
+          },
+          {
+            "name": "/assets/textures/2b558e91c2dcf28a.webp",
+            "initiatorType": "img",
+            "transferSize": 76540,
+            "encodedBodySize": 76240,
+            "durationMs": 11.099999999627471
+          },
+          {
+            "name": "/assets/textures/15f840e8829deb47.webp",
+            "initiatorType": "img",
+            "transferSize": 169500,
+            "encodedBodySize": 169200,
+            "durationMs": 12.900000000372529
+          },
+          {
+            "name": "/assets/textures/0e5ed458e18cc996.webp",
+            "initiatorType": "img",
+            "transferSize": 89580,
+            "encodedBodySize": 89280,
+            "durationMs": 14.100000001490116
+          },
+          {
+            "name": "/assets/textures/bbf32572ca311bbe.webp",
+            "initiatorType": "img",
+            "transferSize": 76388,
+            "encodedBodySize": 76088,
+            "durationMs": 14.400000000372529
+          },
+          {
+            "name": "/assets/textures/10a4bb2537a063c9.webp",
+            "initiatorType": "img",
+            "transferSize": 205464,
+            "encodedBodySize": 205164,
+            "durationMs": 17.200000001117587
+          },
+          {
+            "name": "/assets/textures/f4a224f0c956b139.webp",
+            "initiatorType": "img",
+            "transferSize": 156658,
+            "encodedBodySize": 156358,
+            "durationMs": 22
+          },
+          {
+            "name": "/assets/textures/0e26c4b8f4bc4613.webp",
+            "initiatorType": "img",
+            "transferSize": 206058,
+            "encodedBodySize": 205758,
+            "durationMs": 25.299999998882413
+          },
+          {
+            "name": "/assets/textures/c0efd4b626d89ec1.webp",
+            "initiatorType": "img",
+            "transferSize": 133676,
+            "encodedBodySize": 133376,
+            "durationMs": 25
+          },
+          {
+            "name": "/assets/textures/5cef74797a6fcd70.webp",
+            "initiatorType": "img",
+            "transferSize": 226052,
+            "encodedBodySize": 225752,
+            "durationMs": 27.90000000037253
+          },
+          {
+            "name": "/assets/textures/811455b59772de13.webp",
+            "initiatorType": "img",
+            "transferSize": 41258,
+            "encodedBodySize": 40958,
+            "durationMs": 24.5
+          },
+          {
+            "name": "/assets/textures/f8d02e53266b592e.webp",
+            "initiatorType": "img",
+            "transferSize": 352,
+            "encodedBodySize": 52,
+            "durationMs": 25.40000000037253
+          },
+          {
+            "name": "/assets/textures/6ab4666811f9452b.webp",
+            "initiatorType": "img",
+            "transferSize": 96436,
+            "encodedBodySize": 96136,
+            "durationMs": 28.299999998882413
+          },
+          {
+            "name": "/assets/textures/f9b4e350e83e5c6a.webp",
+            "initiatorType": "img",
+            "transferSize": 154574,
+            "encodedBodySize": 154274,
+            "durationMs": 38.69999999925494
+          },
+          {
+            "name": "/assets/textures/cd4e53d4a4de6fbc.webp",
+            "initiatorType": "img",
+            "transferSize": 214724,
+            "encodedBodySize": 214424,
+            "durationMs": 40.29999999888241
+          },
+          {
+            "name": "/assets/textures/ee8c0afe3c0c386b.webp",
+            "initiatorType": "img",
+            "transferSize": 250276,
+            "encodedBodySize": 249976,
+            "durationMs": 41.79999999888241
+          },
+          {
+            "name": "/assets/textures/dfc053c136025618.webp",
+            "initiatorType": "img",
+            "transferSize": 193540,
+            "encodedBodySize": 193240,
+            "durationMs": 39.40000000037253
+          },
+          {
+            "name": "/assets/textures/d7ae26b6760b110c.webp",
+            "initiatorType": "img",
+            "transferSize": 142700,
+            "encodedBodySize": 142400,
+            "durationMs": 39.90000000037253
+          },
+          {
+            "name": "/assets/textures/bb0d8ba83fa926eb.webp",
+            "initiatorType": "img",
+            "transferSize": 124272,
+            "encodedBodySize": 123972,
+            "durationMs": 40.20000000111759
+          },
+          {
+            "name": "/assets/textures/d4497d445227a239.webp",
+            "initiatorType": "img",
+            "transferSize": 278270,
+            "encodedBodySize": 277970,
+            "durationMs": 48.20000000111759
+          },
+          {
+            "name": "/assets/textures/592c9a2fd9f0ae96.webp",
+            "initiatorType": "img",
+            "transferSize": 216452,
+            "encodedBodySize": 216152,
+            "durationMs": 50.19999999925494
+          },
+          {
+            "name": "/assets/textures/209aabc75f1b1d3e.webp",
+            "initiatorType": "img",
+            "transferSize": 723894,
+            "encodedBodySize": 723594,
+            "durationMs": 55.59999999962747
+          },
+          {
+            "name": "/assets/textures/b5a89e39b4619c54.webp",
+            "initiatorType": "img",
+            "transferSize": 898784,
+            "encodedBodySize": 898484,
+            "durationMs": 57
+          },
+          {
+            "name": "/assets/original/796c5dbc-19f3-4f16-82eb-bd70d4375696.woff2",
+            "initiatorType": "css",
+            "transferSize": 8988,
+            "encodedBodySize": 8688,
+            "durationMs": 17
+          },
+          {
+            "name": "/assets/original/4b00ec6b-82a9-4af8-aa27-6ea6b16dd699.woff2",
+            "initiatorType": "css",
+            "transferSize": 38076,
+            "encodedBodySize": 37776,
+            "durationMs": 2.699999999254942
+          },
+          {
+            "name": "/assets/media/702ce176-3746-4b5c-b0ad-3a6b06108006-room.d064768117fc.webp",
+            "initiatorType": "img",
+            "transferSize": 16090,
+            "encodedBodySize": 15790,
+            "durationMs": 18.200000001117587
+          },
+          {
+            "name": "/assets/media/26bf8d8a-5e0e-45c8-ab41-daa650699202-full.f2752f69c662.webp",
+            "initiatorType": "img",
+            "transferSize": 9848,
+            "encodedBodySize": 9548,
+            "durationMs": 19.199999999254942
+          },
+          {
+            "name": "/assets/media/283e7bcb-02de-475b-9d9f-9cc2c03d5742-full.e9784e283949.webp",
+            "initiatorType": "img",
+            "transferSize": 41196,
+            "encodedBodySize": 40896,
+            "durationMs": 19.59999999962747
+          },
+          {
+            "name": "/assets/media/3eb09b18-06c7-49a5-a7ff-0cf6af297965-room.ef50f23d4707.webp",
+            "initiatorType": "img",
+            "transferSize": 10038,
+            "encodedBodySize": 9738,
+            "durationMs": 19.799999998882413
+          },
+          {
+            "name": "/assets/media/ac41b911-eda0-44fd-a322-78c096a44742-full.1d350023fff6.webp",
+            "initiatorType": "img",
+            "transferSize": 40226,
+            "encodedBodySize": 39926,
+            "durationMs": 19.800000000745058
+          },
+          {
+            "name": "/assets/media/1a44ea55-4a62-4b22-9699-ab25a9b87193-full.6f829798b8a7.webp",
+            "initiatorType": "img",
+            "transferSize": 8342,
+            "encodedBodySize": 8042,
+            "durationMs": 19.899999998509884
+          },
+          {
+            "name": "/assets/media/63ca9260-e4f1-4204-a3ed-1617b9eee51c-room.ec33eb2058d4.webp",
+            "initiatorType": "img",
+            "transferSize": 38200,
+            "encodedBodySize": 37900,
+            "durationMs": 22.799999998882413
+          },
+          {
+            "name": "/assets/portfolio.dc.fce3775c2cc9.html",
+            "initiatorType": "fetch",
+            "transferSize": 75698,
+            "encodedBodySize": 75398,
+            "durationMs": 20.5
+          },
+          {
+            "name": "/assets/lightbox.1fa63cfa260b.js",
+            "initiatorType": "script",
+            "transferSize": 14533,
+            "encodedBodySize": 14233,
+            "durationMs": 18.5
+          },
+          {
+            "name": "/assets/original/b27f8c33-0c97-4699-86f6-d809ec471b6f.woff2",
+            "initiatorType": "css",
+            "transferSize": 35820,
+            "encodedBodySize": 35520,
+            "durationMs": 86.29999999888241
+          },
+          {
+            "name": "/assets/original/63911e89-488f-4acc-988e-f01fca246b35.woff2",
+            "initiatorType": "css",
+            "transferSize": 57600,
+            "encodedBodySize": 57300,
+            "durationMs": 86.90000000037253
+          },
+          {
+            "name": "/assets/media/ac41b911-eda0-44fd-a322-78c096a44742-full.1d350023fff6.webp",
+            "initiatorType": "css",
+            "transferSize": 0,
+            "encodedBodySize": 39926,
+            "durationMs": 1.700000001117587
+          },
+          {
+            "name": "/assets/original/d92f6861-7bcd-4193-aa22-50d2ead40342.woff2",
+            "initiatorType": "css",
+            "transferSize": 9024,
+            "encodedBodySize": 8724,
+            "durationMs": 134.5
+          },
+          {
+            "name": "/assets/media/98048b39-2ada-4149-af88-ebb4807bacfa-full.56912e1efb58.webp",
+            "initiatorType": "css",
+            "transferSize": 97654,
+            "encodedBodySize": 97354,
+            "durationMs": 20.299999998882413
+          },
+          {
+            "name": "/assets/media/702ce176-3746-4b5c-b0ad-3a6b06108006-full.4ca926b34eb7.webp",
+            "initiatorType": "css",
+            "transferSize": 298112,
+            "encodedBodySize": 297812,
+            "durationMs": 8.599999999627471
+          },
+          {
+            "name": "/assets/media/725ced7d-30d3-4897-b0bc-54e44a6dc8a1-poster.9ef0d1e95db6.webp",
+            "initiatorType": "img",
+            "transferSize": 14668,
+            "encodedBodySize": 14368,
+            "durationMs": 6.700000001117587
+          },
+          {
+            "name": "/assets/media/12c6e838-6887-4aa1-a449-baacf881e0d4-full.390ef24cbf68.webp",
+            "initiatorType": "css",
+            "transferSize": 34840,
+            "encodedBodySize": 34540,
+            "durationMs": 8.099999999627471
+          },
+          {
+            "name": "/assets/media/ed6a37ba-1a4e-4038-83e7-b04c2321d48b-full.1138cda3ef4a.webp",
+            "initiatorType": "css",
+            "transferSize": 45962,
+            "encodedBodySize": 45662,
+            "durationMs": 8.099999999627471
+          },
+          {
+            "name": "/assets/media/725ced7d-30d3-4897-b0bc-54e44a6dc8a1-faststart.6d480edcbc4c.mp4",
+            "initiatorType": "video",
+            "transferSize": 300,
+            "encodedBodySize": 0,
+            "durationMs": 26772.400000000373
+          },
+          {
+            "name": "/assets/characters.f53f259f50d0.js",
+            "initiatorType": "script",
+            "transferSize": 159796,
+            "encodedBodySize": 159496,
+            "durationMs": 5.899999998509884
+          },
+          {
+            "name": "/assets/media/3eb09b18-06c7-49a5-a7ff-0cf6af297965-display.76cbe42a5657.webp",
+            "initiatorType": "css",
+            "transferSize": 38038,
+            "encodedBodySize": 37738,
+            "durationMs": 4.400000000372529
+          },
+          {
+            "name": "/assets/media/f3213bcf-8c4c-4537-ae51-e01d2ed6ace7-full.db206904eaf9.webp",
+            "initiatorType": "css",
+            "transferSize": 100382,
+            "encodedBodySize": 100082,
+            "durationMs": 11.599999999627471
+          },
+          {
+            "name": "/assets/media/8c11c899-fa0d-4838-9503-38333dc2a7c3-full.a6e3e81fad15.webp",
+            "initiatorType": "css",
+            "transferSize": 104192,
+            "encodedBodySize": 103892,
+            "durationMs": 12.300000000745058
+          },
+          {
+            "name": "/assets/media/2e7b5a45-4aa2-47ab-8a9f-dbc62665594c-full.acb1b408aef8.webp",
+            "initiatorType": "css",
+            "transferSize": 76966,
+            "encodedBodySize": 76666,
+            "durationMs": 12.299999998882413
+          },
+          {
+            "name": "/assets/media/cb06f270-398b-49bd-b9ed-2bd41ce7e5d4-full.b2ef3004aca9.webp",
+            "initiatorType": "css",
+            "transferSize": 94014,
+            "encodedBodySize": 93714,
+            "durationMs": 12.600000001490116
+          },
+          {
+            "name": "/assets/media/702ce176-3746-4b5c-b0ad-3a6b06108006-full.4ca926b34eb7.webp",
+            "initiatorType": "css",
+            "transferSize": 0,
+            "encodedBodySize": 297812,
+            "durationMs": 2.799999998882413
+          },
+          {
+            "name": "/assets/media/725ced7d-30d3-4897-b0bc-54e44a6dc8a1-poster.9ef0d1e95db6.webp",
+            "initiatorType": "img",
+            "transferSize": 0,
+            "encodedBodySize": 14368,
+            "durationMs": 5.699999999254942
+          },
+          {
+            "name": "/assets/media/12c6e838-6887-4aa1-a449-baacf881e0d4-full.390ef24cbf68.webp",
+            "initiatorType": "css",
+            "transferSize": 0,
+            "encodedBodySize": 34540,
+            "durationMs": 2.599999999627471
+          },
+          {
+            "name": "/assets/media/ed6a37ba-1a4e-4038-83e7-b04c2321d48b-full.1138cda3ef4a.webp",
+            "initiatorType": "css",
+            "transferSize": 0,
+            "encodedBodySize": 45662,
+            "durationMs": 4.800000000745058
+          }
+        ],
+        "marks": [
+          {
+            "name": "oc:bootstrap",
+            "startTimeMs": 28.800000000745058
+          },
+          {
+            "name": "oc-scene-start",
+            "startTimeMs": 104.80000000074506
+          },
+          {
+            "name": "oc-scene-ready",
+            "startTimeMs": 6475.5
+          }
+        ],
+        "scene": {
+          "phase": "door",
+          "lite": true,
+          "reducedMotion": true,
+          "pixelRatio": 0.25,
+          "geometries": 779,
+          "textures": 90,
+          "drawCalls": 1,
+          "triangles": 1
+        }
+      },
+      "issues": []
+    },
+    {
+      "name": "mobile",
+      "startup": {
+        "elapsedMs": 16774.199999999255,
+        "navigation": [
+          {
+            "transferSize": 108750,
+            "encodedBodySize": 108450,
+            "decodedBodySize": 108450,
+            "domContentLoadedMs": 70.59999999962747
+          }
+        ],
+        "resources": [
+          {
+            "name": "/assets/app.b5e1d4259139.css",
+            "initiatorType": "link",
+            "transferSize": 8077,
+            "encodedBodySize": 7777,
+            "durationMs": 7.599999999627471
+          },
+          {
+            "name": "/assets/bootstrap.6181bdecf50d.js",
+            "initiatorType": "script",
+            "transferSize": 8530,
+            "encodedBodySize": 8230,
+            "durationMs": 13.699999999254942
+          },
+          {
+            "name": "/assets/react.production.2bfb35cf0e19.js",
+            "initiatorType": "script",
+            "transferSize": 10932,
+            "encodedBodySize": 10632,
+            "durationMs": 13.699999999254942
+          },
+          {
+            "name": "/assets/react-dom.production.5e451c64ee78.js",
+            "initiatorType": "script",
+            "transferSize": 130325,
+            "encodedBodySize": 130025,
+            "durationMs": 14.900000000372529
+          },
+          {
+            "name": "/assets/dc-runtime.8ef8832a12e3.js",
+            "initiatorType": "script",
+            "transferSize": 37126,
+            "encodedBodySize": 36826,
+            "durationMs": 14.5
+          },
+          {
+            "name": "/assets/three-bundle.23bf66d78d51.js",
+            "initiatorType": "script",
+            "transferSize": 726598,
+            "encodedBodySize": 726298,
+            "durationMs": 18
+          },
+          {
+            "name": "/assets/original/796c5dbc-19f3-4f16-82eb-bd70d4375696.woff2",
+            "initiatorType": "css",
+            "transferSize": 8988,
+            "encodedBodySize": 8688,
+            "durationMs": 18
+          },
+          {
+            "name": "/assets/textures.650c9950b560.json",
+            "initiatorType": "fetch",
+            "transferSize": 2775,
+            "encodedBodySize": 2475,
+            "durationMs": 2.400000000372529
+          },
+          {
+            "name": "/assets/textures/d3c196b2cb6f6e08.webp",
+            "initiatorType": "img",
+            "transferSize": 52744,
+            "encodedBodySize": 52444,
+            "durationMs": 7.5
+          },
+          {
+            "name": "/assets/textures/2b558e91c2dcf28a.webp",
+            "initiatorType": "img",
+            "transferSize": 76540,
+            "encodedBodySize": 76240,
+            "durationMs": 11
+          },
+          {
+            "name": "/assets/textures/15f840e8829deb47.webp",
+            "initiatorType": "img",
+            "transferSize": 169500,
+            "encodedBodySize": 169200,
+            "durationMs": 13
+          },
+          {
+            "name": "/assets/textures/10a4bb2537a063c9.webp",
+            "initiatorType": "img",
+            "transferSize": 205464,
+            "encodedBodySize": 205164,
+            "durationMs": 18.300000000745058
+          },
+          {
+            "name": "/assets/textures/0e5ed458e18cc996.webp",
+            "initiatorType": "img",
+            "transferSize": 89580,
+            "encodedBodySize": 89280,
+            "durationMs": 13.400000000372529
+          },
+          {
+            "name": "/assets/textures/bbf32572ca311bbe.webp",
+            "initiatorType": "img",
+            "transferSize": 76388,
+            "encodedBodySize": 76088,
+            "durationMs": 14.800000000745058
+          },
+          {
+            "name": "/assets/textures/f4a224f0c956b139.webp",
+            "initiatorType": "img",
+            "transferSize": 156658,
+            "encodedBodySize": 156358,
+            "durationMs": 23.199999999254942
+          },
+          {
+            "name": "/assets/textures/c0efd4b626d89ec1.webp",
+            "initiatorType": "img",
+            "transferSize": 133676,
+            "encodedBodySize": 133376,
+            "durationMs": 26
+          },
+          {
+            "name": "/assets/textures/0e26c4b8f4bc4613.webp",
+            "initiatorType": "img",
+            "transferSize": 206058,
+            "encodedBodySize": 205758,
+            "durationMs": 26.59999999962747
+          },
+          {
+            "name": "/assets/textures/5cef74797a6fcd70.webp",
+            "initiatorType": "img",
+            "transferSize": 226052,
+            "encodedBodySize": 225752,
+            "durationMs": 29.59999999962747
+          },
+          {
+            "name": "/assets/textures/811455b59772de13.webp",
+            "initiatorType": "img",
+            "transferSize": 41258,
+            "encodedBodySize": 40958,
+            "durationMs": 25
+          },
+          {
+            "name": "/assets/textures/f8d02e53266b592e.webp",
+            "initiatorType": "img",
+            "transferSize": 352,
+            "encodedBodySize": 52,
+            "durationMs": 25.59999999962747
+          },
+          {
+            "name": "/assets/textures/6ab4666811f9452b.webp",
+            "initiatorType": "img",
+            "transferSize": 96436,
+            "encodedBodySize": 96136,
+            "durationMs": 30.40000000037253
+          },
+          {
+            "name": "/assets/textures/f9b4e350e83e5c6a.webp",
+            "initiatorType": "img",
+            "transferSize": 154574,
+            "encodedBodySize": 154274,
+            "durationMs": 39
+          },
+          {
+            "name": "/assets/textures/cd4e53d4a4de6fbc.webp",
+            "initiatorType": "img",
+            "transferSize": 214724,
+            "encodedBodySize": 214424,
+            "durationMs": 41.30000000074506
+          },
+          {
+            "name": "/assets/textures/ee8c0afe3c0c386b.webp",
+            "initiatorType": "img",
+            "transferSize": 250276,
+            "encodedBodySize": 249976,
+            "durationMs": 41.600000001490116
+          },
+          {
+            "name": "/assets/textures/dfc053c136025618.webp",
+            "initiatorType": "img",
+            "transferSize": 193540,
+            "encodedBodySize": 193240,
+            "durationMs": 40.40000000037253
+          },
+          {
+            "name": "/assets/textures/d7ae26b6760b110c.webp",
+            "initiatorType": "img",
+            "transferSize": 142700,
+            "encodedBodySize": 142400,
+            "durationMs": 40.59999999962747
+          },
+          {
+            "name": "/assets/textures/bb0d8ba83fa926eb.webp",
+            "initiatorType": "img",
+            "transferSize": 124272,
+            "encodedBodySize": 123972,
+            "durationMs": 39.5
+          },
+          {
+            "name": "/assets/textures/d4497d445227a239.webp",
+            "initiatorType": "img",
+            "transferSize": 278270,
+            "encodedBodySize": 277970,
+            "durationMs": 49.90000000037253
+          },
+          {
+            "name": "/assets/textures/592c9a2fd9f0ae96.webp",
+            "initiatorType": "img",
+            "transferSize": 216452,
+            "encodedBodySize": 216152,
+            "durationMs": 49.40000000037253
+          },
+          {
+            "name": "/assets/textures/b5a89e39b4619c54.webp",
+            "initiatorType": "img",
+            "transferSize": 898784,
+            "encodedBodySize": 898484,
+            "durationMs": 58.79999999888241
+          },
+          {
+            "name": "/assets/textures/209aabc75f1b1d3e.webp",
+            "initiatorType": "img",
+            "transferSize": 723894,
+            "encodedBodySize": 723594,
+            "durationMs": 56.5
+          },
+          {
+            "name": "/assets/original/4b00ec6b-82a9-4af8-aa27-6ea6b16dd699.woff2",
+            "initiatorType": "css",
+            "transferSize": 38076,
+            "encodedBodySize": 37776,
+            "durationMs": 4.699999999254942
+          },
+          {
+            "name": "/assets/media/702ce176-3746-4b5c-b0ad-3a6b06108006-room.d064768117fc.webp",
+            "initiatorType": "img",
+            "transferSize": 16090,
+            "encodedBodySize": 15790,
+            "durationMs": 14.5
+          },
+          {
+            "name": "/assets/media/26bf8d8a-5e0e-45c8-ab41-daa650699202-full.f2752f69c662.webp",
+            "initiatorType": "img",
+            "transferSize": 9848,
+            "encodedBodySize": 9548,
+            "durationMs": 15.199999999254942
+          },
+          {
+            "name": "/assets/media/283e7bcb-02de-475b-9d9f-9cc2c03d5742-full.e9784e283949.webp",
+            "initiatorType": "img",
+            "transferSize": 41196,
+            "encodedBodySize": 40896,
+            "durationMs": 15.200000001117587
+          },
+          {
+            "name": "/assets/media/3eb09b18-06c7-49a5-a7ff-0cf6af297965-room.ef50f23d4707.webp",
+            "initiatorType": "img",
+            "transferSize": 10038,
+            "encodedBodySize": 9738,
+            "durationMs": 15.399999998509884
+          },
+          {
+            "name": "/assets/media/ac41b911-eda0-44fd-a322-78c096a44742-full.1d350023fff6.webp",
+            "initiatorType": "img",
+            "transferSize": 40226,
+            "encodedBodySize": 39926,
+            "durationMs": 15.400000000372529
+          },
+          {
+            "name": "/assets/media/1a44ea55-4a62-4b22-9699-ab25a9b87193-full.6f829798b8a7.webp",
+            "initiatorType": "img",
+            "transferSize": 8342,
+            "encodedBodySize": 8042,
+            "durationMs": 15.400000000372529
+          },
+          {
+            "name": "/assets/media/63ca9260-e4f1-4204-a3ed-1617b9eee51c-room.ec33eb2058d4.webp",
+            "initiatorType": "img",
+            "transferSize": 38200,
+            "encodedBodySize": 37900,
+            "durationMs": 17.600000001490116
+          }
+        ],
+        "marks": [
+          {
+            "name": "oc:bootstrap",
+            "startTimeMs": 34.5
+          },
+          {
+            "name": "oc-scene-start",
+            "startTimeMs": 93.5
+          },
+          {
+            "name": "oc-scene-ready",
+            "startTimeMs": 6874.199999999255
+          }
+        ],
+        "scene": {
+          "phase": "door",
+          "lite": true,
+          "reducedMotion": true,
+          "pixelRatio": 1,
+          "geometries": 715,
+          "textures": 81,
+          "drawCalls": 1,
+          "triangles": 1
+        }
+      },
+      "completed": {
+        "elapsedMs": 39232.79999999888,
+        "navigation": [
+          {
+            "transferSize": 108750,
+            "encodedBodySize": 108450,
+            "decodedBodySize": 108450,
+            "domContentLoadedMs": 70.59999999962747
+          }
+        ],
+        "resources": [
+          {
+            "name": "/assets/app.b5e1d4259139.css",
+            "initiatorType": "link",
+            "transferSize": 8077,
+            "encodedBodySize": 7777,
+            "durationMs": 7.599999999627471
+          },
+          {
+            "name": "/assets/bootstrap.6181bdecf50d.js",
+            "initiatorType": "script",
+            "transferSize": 8530,
+            "encodedBodySize": 8230,
+            "durationMs": 13.699999999254942
+          },
+          {
+            "name": "/assets/react.production.2bfb35cf0e19.js",
+            "initiatorType": "script",
+            "transferSize": 10932,
+            "encodedBodySize": 10632,
+            "durationMs": 13.699999999254942
+          },
+          {
+            "name": "/assets/react-dom.production.5e451c64ee78.js",
+            "initiatorType": "script",
+            "transferSize": 130325,
+            "encodedBodySize": 130025,
+            "durationMs": 14.900000000372529
+          },
+          {
+            "name": "/assets/dc-runtime.8ef8832a12e3.js",
+            "initiatorType": "script",
+            "transferSize": 37126,
+            "encodedBodySize": 36826,
+            "durationMs": 14.5
+          },
+          {
+            "name": "/assets/three-bundle.23bf66d78d51.js",
+            "initiatorType": "script",
+            "transferSize": 726598,
+            "encodedBodySize": 726298,
+            "durationMs": 18
+          },
+          {
+            "name": "/assets/original/796c5dbc-19f3-4f16-82eb-bd70d4375696.woff2",
+            "initiatorType": "css",
+            "transferSize": 8988,
+            "encodedBodySize": 8688,
+            "durationMs": 18
+          },
+          {
+            "name": "/assets/textures.650c9950b560.json",
+            "initiatorType": "fetch",
+            "transferSize": 2775,
+            "encodedBodySize": 2475,
+            "durationMs": 2.400000000372529
+          },
+          {
+            "name": "/assets/textures/d3c196b2cb6f6e08.webp",
+            "initiatorType": "img",
+            "transferSize": 52744,
+            "encodedBodySize": 52444,
+            "durationMs": 7.5
+          },
+          {
+            "name": "/assets/textures/2b558e91c2dcf28a.webp",
+            "initiatorType": "img",
+            "transferSize": 76540,
+            "encodedBodySize": 76240,
+            "durationMs": 11
+          },
+          {
+            "name": "/assets/textures/15f840e8829deb47.webp",
+            "initiatorType": "img",
+            "transferSize": 169500,
+            "encodedBodySize": 169200,
+            "durationMs": 13
+          },
+          {
+            "name": "/assets/textures/10a4bb2537a063c9.webp",
+            "initiatorType": "img",
+            "transferSize": 205464,
+            "encodedBodySize": 205164,
+            "durationMs": 18.300000000745058
+          },
+          {
+            "name": "/assets/textures/0e5ed458e18cc996.webp",
+            "initiatorType": "img",
+            "transferSize": 89580,
+            "encodedBodySize": 89280,
+            "durationMs": 13.400000000372529
+          },
+          {
+            "name": "/assets/textures/bbf32572ca311bbe.webp",
+            "initiatorType": "img",
+            "transferSize": 76388,
+            "encodedBodySize": 76088,
+            "durationMs": 14.800000000745058
+          },
+          {
+            "name": "/assets/textures/f4a224f0c956b139.webp",
+            "initiatorType": "img",
+            "transferSize": 156658,
+            "encodedBodySize": 156358,
+            "durationMs": 23.199999999254942
+          },
+          {
+            "name": "/assets/textures/c0efd4b626d89ec1.webp",
+            "initiatorType": "img",
+            "transferSize": 133676,
+            "encodedBodySize": 133376,
+            "durationMs": 26
+          },
+          {
+            "name": "/assets/textures/0e26c4b8f4bc4613.webp",
+            "initiatorType": "img",
+            "transferSize": 206058,
+            "encodedBodySize": 205758,
+            "durationMs": 26.59999999962747
+          },
+          {
+            "name": "/assets/textures/5cef74797a6fcd70.webp",
+            "initiatorType": "img",
+            "transferSize": 226052,
+            "encodedBodySize": 225752,
+            "durationMs": 29.59999999962747
+          },
+          {
+            "name": "/assets/textures/811455b59772de13.webp",
+            "initiatorType": "img",
+            "transferSize": 41258,
+            "encodedBodySize": 40958,
+            "durationMs": 25
+          },
+          {
+            "name": "/assets/textures/f8d02e53266b592e.webp",
+            "initiatorType": "img",
+            "transferSize": 352,
+            "encodedBodySize": 52,
+            "durationMs": 25.59999999962747
+          },
+          {
+            "name": "/assets/textures/6ab4666811f9452b.webp",
+            "initiatorType": "img",
+            "transferSize": 96436,
+            "encodedBodySize": 96136,
+            "durationMs": 30.40000000037253
+          },
+          {
+            "name": "/assets/textures/f9b4e350e83e5c6a.webp",
+            "initiatorType": "img",
+            "transferSize": 154574,
+            "encodedBodySize": 154274,
+            "durationMs": 39
+          },
+          {
+            "name": "/assets/textures/cd4e53d4a4de6fbc.webp",
+            "initiatorType": "img",
+            "transferSize": 214724,
+            "encodedBodySize": 214424,
+            "durationMs": 41.30000000074506
+          },
+          {
+            "name": "/assets/textures/ee8c0afe3c0c386b.webp",
+            "initiatorType": "img",
+            "transferSize": 250276,
+            "encodedBodySize": 249976,
+            "durationMs": 41.600000001490116
+          },
+          {
+            "name": "/assets/textures/dfc053c136025618.webp",
+            "initiatorType": "img",
+            "transferSize": 193540,
+            "encodedBodySize": 193240,
+            "durationMs": 40.40000000037253
+          },
+          {
+            "name": "/assets/textures/d7ae26b6760b110c.webp",
+            "initiatorType": "img",
+            "transferSize": 142700,
+            "encodedBodySize": 142400,
+            "durationMs": 40.59999999962747
+          },
+          {
+            "name": "/assets/textures/bb0d8ba83fa926eb.webp",
+            "initiatorType": "img",
+            "transferSize": 124272,
+            "encodedBodySize": 123972,
+            "durationMs": 39.5
+          },
+          {
+            "name": "/assets/textures/d4497d445227a239.webp",
+            "initiatorType": "img",
+            "transferSize": 278270,
+            "encodedBodySize": 277970,
+            "durationMs": 49.90000000037253
+          },
+          {
+            "name": "/assets/textures/592c9a2fd9f0ae96.webp",
+            "initiatorType": "img",
+            "transferSize": 216452,
+            "encodedBodySize": 216152,
+            "durationMs": 49.40000000037253
+          },
+          {
+            "name": "/assets/textures/b5a89e39b4619c54.webp",
+            "initiatorType": "img",
+            "transferSize": 898784,
+            "encodedBodySize": 898484,
+            "durationMs": 58.79999999888241
+          },
+          {
+            "name": "/assets/textures/209aabc75f1b1d3e.webp",
+            "initiatorType": "img",
+            "transferSize": 723894,
+            "encodedBodySize": 723594,
+            "durationMs": 56.5
+          },
+          {
+            "name": "/assets/original/4b00ec6b-82a9-4af8-aa27-6ea6b16dd699.woff2",
+            "initiatorType": "css",
+            "transferSize": 38076,
+            "encodedBodySize": 37776,
+            "durationMs": 4.699999999254942
+          },
+          {
+            "name": "/assets/media/702ce176-3746-4b5c-b0ad-3a6b06108006-room.d064768117fc.webp",
+            "initiatorType": "img",
+            "transferSize": 16090,
+            "encodedBodySize": 15790,
+            "durationMs": 14.5
+          },
+          {
+            "name": "/assets/media/26bf8d8a-5e0e-45c8-ab41-daa650699202-full.f2752f69c662.webp",
+            "initiatorType": "img",
+            "transferSize": 9848,
+            "encodedBodySize": 9548,
+            "durationMs": 15.199999999254942
+          },
+          {
+            "name": "/assets/media/283e7bcb-02de-475b-9d9f-9cc2c03d5742-full.e9784e283949.webp",
+            "initiatorType": "img",
+            "transferSize": 41196,
+            "encodedBodySize": 40896,
+            "durationMs": 15.200000001117587
+          },
+          {
+            "name": "/assets/media/3eb09b18-06c7-49a5-a7ff-0cf6af297965-room.ef50f23d4707.webp",
+            "initiatorType": "img",
+            "transferSize": 10038,
+            "encodedBodySize": 9738,
+            "durationMs": 15.399999998509884
+          },
+          {
+            "name": "/assets/media/ac41b911-eda0-44fd-a322-78c096a44742-full.1d350023fff6.webp",
+            "initiatorType": "img",
+            "transferSize": 40226,
+            "encodedBodySize": 39926,
+            "durationMs": 15.400000000372529
+          },
+          {
+            "name": "/assets/media/1a44ea55-4a62-4b22-9699-ab25a9b87193-full.6f829798b8a7.webp",
+            "initiatorType": "img",
+            "transferSize": 8342,
+            "encodedBodySize": 8042,
+            "durationMs": 15.400000000372529
+          },
+          {
+            "name": "/assets/media/63ca9260-e4f1-4204-a3ed-1617b9eee51c-room.ec33eb2058d4.webp",
+            "initiatorType": "img",
+            "transferSize": 38200,
+            "encodedBodySize": 37900,
+            "durationMs": 17.600000001490116
+          },
+          {
+            "name": "/assets/portfolio.dc.fce3775c2cc9.html",
+            "initiatorType": "fetch",
+            "transferSize": 75698,
+            "encodedBodySize": 75398,
+            "durationMs": 4.800000000745058
+          },
+          {
+            "name": "/assets/lightbox.1fa63cfa260b.js",
+            "initiatorType": "script",
+            "transferSize": 14533,
+            "encodedBodySize": 14233,
+            "durationMs": 4.099999999627471
+          },
+          {
+            "name": "/assets/original/b27f8c33-0c97-4699-86f6-d809ec471b6f.woff2",
+            "initiatorType": "css",
+            "transferSize": 35820,
+            "encodedBodySize": 35520,
+            "durationMs": 18.699999999254942
+          },
+          {
+            "name": "/assets/original/63911e89-488f-4acc-988e-f01fca246b35.woff2",
+            "initiatorType": "css",
+            "transferSize": 57600,
+            "encodedBodySize": 57300,
+            "durationMs": 19.300000000745058
+          },
+          {
+            "name": "/assets/media/ac41b911-eda0-44fd-a322-78c096a44742-full.1d350023fff6.webp",
+            "initiatorType": "css",
+            "transferSize": 0,
+            "encodedBodySize": 39926,
+            "durationMs": 2.099999999627471
+          },
+          {
+            "name": "/assets/original/d92f6861-7bcd-4193-aa22-50d2ead40342.woff2",
+            "initiatorType": "css",
+            "transferSize": 9024,
+            "encodedBodySize": 8724,
+            "durationMs": 76.09999999962747
+          }
+        ],
+        "marks": [
+          {
+            "name": "oc:bootstrap",
+            "startTimeMs": 34.5
+          },
+          {
+            "name": "oc-scene-start",
+            "startTimeMs": 93.5
+          },
+          {
+            "name": "oc-scene-ready",
+            "startTimeMs": 6874.199999999255
+          }
+        ],
+        "scene": {
+          "phase": "files",
+          "lite": true,
+          "reducedMotion": true,
+          "pixelRatio": 0.25,
+          "geometries": 728,
+          "textures": 86,
+          "drawCalls": 1,
+          "triangles": 1
+        }
+      },
+      "issues": []
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

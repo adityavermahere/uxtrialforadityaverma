@@ -1,0 +1,10 @@
+{
+  "entryHtmlBytes": 108450,
+  "sourceHtmlBytes": 51166190,
+  "initialResourceUpperBoundBytes": 6249781,
+  "initialResourceUpperBoundNote": "Static dependency estimate, uncompressed; includes all CSS font subsets, excludes gesture-started music and deferred features. Not a browser measurement.",
+  "totalDeploymentBytes": 30576581,
+  "browserAcceptance": "Passed desktop/mobile interaction smoke with software GPU at 0.25 render scale; screenshots skipped. Full-resolution visual and frame-rate acceptance remain separate.",
+  "browserChecks": 12,
+  "deployment": "not deployed"
+}

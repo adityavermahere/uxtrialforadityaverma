@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-11-15T19:15:52.031Z",
+  "kind": "Static build validation and Node VM integration; no browser or WebGL acceptance.",
+  "checks": [
+    {
+      "name": "generated JavaScript and component logic parse",
+      "passed": true,
+      "javascriptFiles": 7
+    },
+    {
+      "name": "every generated asset reference resolves to a deployed file",
+      "passed": true,
+      "verifiedReferences": 96
+    },
+    {
+      "name": "standalone payload and external startup dependencies are removed",
+      "passed": true,
+      "htmlBytes": 108450
+    },
+    {
+      "name": "startup scripts defer execution and omit portfolio, character and media loads",
+      "passed": true,
+      "startupScriptCount": 5
+    },
+    {
+      "name": "content hashes match generated immutable assets",
+      "passed": true,
+      "verifiedHashes": 10
+    },
+    {
+      "name": "bootstrap performs no eager feature requests and deduplicates deferred requests",
+      "passed": true,
+      "deferredRequests": 3
+    },
+    {
+      "name": "deferred portfolio fetch and character script failures can be retried",
+      "passed": true
+    },
+    {
+      "name": "scene navigation guards, enter/skip, gallery, drawer and return flows work in VM",
+      "passed": true,
+      "note": "State/controller behavior tested without WebGL or DOM layout."
+    },
+    {
+      "name": "drawer load failure stays in room and a retry opens files once",
+      "passed": true
+    },
+    {
+      "name": "portfolio preserves all content and loads characters only for the Aetherion case",
+      "passed": true,
+      "projectCount": 6,
+      "characterLoads": 1
+    },
+    {
+      "name": "character preview failure resets navigation and pending loads respect unmount",
+      "passed": true
+    },
+    {
+      "name": "a lazy-mounted active portfolio opens the gallery-selected case",
+      "passed": true
+    },
+    {
+      "name": "unmounted portfolios do not activate a stale gallery-selected case",
+      "passed": true
+    },
+    {
+      "name": "prebaked texture recipes and deployed files are complete",
+      "passed": true,
+      "recipes": 12
+    },
+    {
+      "name": "full scene initialization, camera navigation and lighting run with real Three.js geometry and mocked graphics",
+      "passed": true,
+      "scenarios": [
+        {
+          "quality": "lite",
+          "meshes": 926,
+          "vertices": 2677994,
+          "textureRecipes": 12
+        },
+        {
+          "quality": "standard",
+          "meshes": 920,
+          "vertices": 2685542,
+          "textureRecipes": 12
+        }
+      ],
+      "note": "Real scene geometry, materials and state; canvas drawing, GPU passes and image pixels are mocked."
+    }
+  ],
+  "build": {
+    "htmlBytes": 108450,
+    "files": 97,
+    "totalBytes": 30576581
+  },
+  "passed": true
+}
